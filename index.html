@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Litehouse AI Technologies — The operating system for regulated finance</title>
+<meta name="description" content="A showcase of work by Litehouse AI Technologies — the AI infrastructure it designs and builds for India&#39;s regulated lending: compliance, credit, audit and property intelligence. A record of the work, not a product offered to institutions.">
+<meta name="theme-color" content="#070E1E">
+<meta name="author" content="Litehouse AI Technologies">
+<link rel="canonical" href="https://litehouseco.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Litehouse AI Technologies">
+<meta property="og:title" content="Litehouse AI Technologies — The operating system for regulated finance">
+<meta property="og:description" content="A showcase of the AI infrastructure Litehouse AI Technologies designs and builds for India&#39;s regulated lending. A record of the work — not a product offered to institutions.">
+<meta property="og:url" content="https://litehouseco.com/">
+<meta property="og:image" content="https://litehouseco.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Litehouse AI Technologies — The operating system for regulated finance">
+<meta name="twitter:description" content="An SLM-first, audit-grade AI operating system for India&#39;s regulated lenders.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="preload" as="style" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/fonts.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Litehouse AI Technologies",
+  "alternateName": "LitehouseCo",
+  "url": "https://litehouseco.com",
+  "email": "contact@litehouseco.com",
+  "description": "Litehouse AI Technologies builds Litehouse AI OS — an SLM-first, audit-grade AI operating system for India's regulated lenders.",
+  "areaServed": "IN",
+  "knowsAbout": ["Regulated lending","Compliance","Credit underwriting","Audit","Property intelligence","AI agents"]
+}
+</script>
+
+<style>
+  :root{
+    /* Ink / navy elevations */
+    --ink:#070E1E;
+    --navy-900:#091428;
+    --navy-800:#0C1A32;
+    --navy-700:#112240;
+    --navy-600:#16305A;
+    --line:#1C2C4A;
+    --line-soft:#152238;
+
+    /* Accents from the mark */
+    --blue:#2E6BF0;
+    --blue-bright:#4F8EF7;
+    --beam:#7DB9EE;
+    --beam-soft:#A8D2F2;
+
+    /* Text */
+    --ivory:#EAEEF7;
+    --fog:#AEBAD1;
+    --muted:#7C8AA6;
+    --dim:#5A6889;
+
+    /* Paper band (for editorial contrast) */
+    --paper:#F4F6FB;
+    --paper-line:#DCE3F0;
+    --paper-ink:#0C1730;
+    --paper-muted:#4A5878;
+
+    --disp:'Fraunces',Georgia,'Times New Roman',serif;
+    --ui:'Inter Tight',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+
+    --maxw:1200px;
+    --gut:clamp(20px,5vw,64px);
+    --r:14px;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;background:var(--ink);color:var(--ivory);
+    font-family:var(--ui);font-size:17px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4{margin:0;font-weight:500;letter-spacing:-.015em}
+  p{margin:0}
+  ::selection{background:var(--blue);color:#fff}
+  img,svg{display:block}
+  :focus-visible{outline:2px solid var(--blue-bright);outline-offset:3px;border-radius:4px}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut)}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--beam);display:inline-flex;align-items:center;gap:10px;
+  }
+  .eyebrow .n{color:var(--muted)}
+  .disp{font-family:var(--disp);font-weight:400;letter-spacing:-.02em;line-height:1.04}
+  .lede{color:var(--fog);font-size:clamp(17px,1.6vw,20px);line-height:1.65;max-width:60ch}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:60;
+    backdrop-filter:saturate(140%) blur(14px);
+    background:rgba(7,14,30,.72);
+    border-bottom:1px solid transparent;transition:border-color .3s,background .3s;
+  }
+  header.nav.scrolled{border-bottom-color:var(--line);background:rgba(7,14,30,.9)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .word{font-family:var(--disp);font-size:20px;letter-spacing:-.01em}
+  .brand .word b{font-weight:600}
+  .brand .word .ai{color:var(--beam);font-weight:600}
+  nav.links{display:flex;gap:30px;align-items:center}
+  nav.links a{font-size:14.5px;color:var(--fog);transition:color .2s;position:relative}
+  nav.links a:hover{color:var(--ivory)}
+  .btn{
+    font-family:var(--ui);font-size:14.5px;font-weight:500;cursor:pointer;
+    padding:10px 18px;border-radius:999px;border:1px solid var(--line);
+    background:transparent;color:var(--ivory);transition:.2s;white-space:nowrap;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn:hover{border-color:var(--blue-bright);color:#fff}
+  .btn.solid{background:var(--blue);border-color:var(--blue);color:#fff}
+  .btn.solid:hover{background:var(--blue-bright);border-color:var(--blue-bright);box-shadow:0 8px 30px -8px rgba(46,107,240,.6)}
+  .nav-cta{display:flex;gap:12px;align-items:center}
+  .menu-btn{display:none;background:none;border:0;color:var(--ivory);cursor:pointer;padding:8px}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;padding:clamp(56px,10vh,120px) 0 clamp(48px,8vh,90px);overflow:hidden}
+  .hero .beam{position:absolute;inset:0;pointer-events:none;z-index:0}
+  .beam-glow{
+    position:absolute;left:8%;top:10%;width:52vw;height:52vw;max-width:720px;max-height:720px;
+    background:radial-gradient(closest-side,rgba(46,107,240,.28),rgba(46,107,240,.06) 55%,transparent 72%);
+    filter:blur(6px);animation:pulse 9s ease-in-out infinite;
+  }
+  .beam-ray{
+    position:absolute;left:-6%;top:-10%;width:60%;height:70%;
+    background:linear-gradient(115deg,rgba(125,185,238,.16),rgba(125,185,238,0) 60%);
+    transform-origin:left center;animation:sweep 14s ease-in-out infinite;mix-blend-mode:screen;
+  }
+  @keyframes pulse{0%,100%{opacity:.75}50%{opacity:1}}
+  @keyframes sweep{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(6deg)}}
+  @media (prefers-reduced-motion:reduce){.beam-glow,.beam-ray{animation:none}}
+
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:center}
+  .hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(38px,6vw,72px);line-height:1.01;letter-spacing:-.025em}
+  .hero h1 em{font-style:italic;color:var(--beam)}
+  .hero .lede{margin-top:26px}
+  .hero-cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+  .hero-note{margin-top:28px;font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+
+  /* hero visual: lighthouse mark + orbit lines */
+  .hero-vis{position:relative;aspect-ratio:1/1;max-width:420px;margin-left:auto;width:100%}
+  .hero-vis svg{width:100%;height:100%}
+
+  .proof-strip{
+    position:relative;z-index:2;margin-top:clamp(40px,7vh,72px);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  .proof-strip div{padding:20px 22px;border-left:1px solid var(--line-soft)}
+  .proof-strip div:first-child{border-left:0;padding-left:0}
+  .proof-strip .k{font-family:var(--disp);font-size:clamp(22px,2.4vw,30px);color:var(--ivory)}
+  .proof-strip .v{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:clamp(72px,11vh,140px) 0;position:relative}
+  .sec-head{max-width:760px;margin-bottom:clamp(40px,6vh,68px)}
+  .sec-head h2{font-family:var(--disp);font-weight:400;font-size:clamp(28px,4vw,46px);line-height:1.08;margin-top:20px}
+  .sec-head p{margin-top:20px}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* ---------- WHAT WE DO ---------- */
+  .what{border-top:1px solid var(--line-soft)}
+  .what-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+  .what h2{font-family:var(--disp);font-weight:400;font-size:clamp(26px,3.4vw,40px);line-height:1.1;letter-spacing:-.02em}
+  .what .body p{color:var(--fog);margin-bottom:18px}
+  .what .body p strong{color:var(--ivory);font-weight:600}
+  .pillars{margin-top:30px;display:grid;gap:0;border-top:1px solid var(--line)}
+  .pillars .row{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line-soft)}
+  .pillars .row .lab{font-family:var(--mono);font-size:12px;color:var(--beam);letter-spacing:.1em;padding-top:3px}
+  .pillars .row .txt{color:var(--fog);font-size:15.5px}
+  .pillars .row .txt b{color:var(--ivory);font-weight:600;display:block;margin-bottom:2px;font-size:16px}
+
+  /* ---------- PLATFORM ---------- */
+  .platform{background:linear-gradient(180deg,var(--ink),var(--navy-900))}
+  .stack{display:grid;grid-template-columns:1fr;gap:14px;margin-top:8px}
+  .layer{
+    border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--navy-800),var(--navy-900));
+    padding:22px 24px;display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center;transition:.25s;
+  }
+  .layer:hover{border-color:var(--navy-600);transform:translateY(-2px)}
+  .layer .lname{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--beam)}
+  .layer .ltitle{font-family:var(--disp);font-size:20px;color:var(--ivory);margin-top:4px}
+  .layer .ldesc{color:var(--fog);font-size:15px}
+  .layer .ldesc code{font-family:var(--mono);font-size:12.5px;color:var(--beam-soft);background:rgba(125,185,238,.08);padding:2px 7px;border-radius:6px}
+
+  .clusters{margin-top:44px;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .cluster{padding:24px 20px;border-left:1px solid var(--line-soft);position:relative;transition:.25s}
+  .cluster:first-child{border-left:0}
+  .cluster:hover{background:var(--navy-800)}
+  .cluster .cn{font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .cluster h4{font-family:var(--ui);font-weight:600;font-size:16px;margin-top:14px;color:var(--ivory);letter-spacing:0}
+  .cluster p{margin-top:10px;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .gov{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--fog)}
+  .gov .chip{border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--beam-soft)}
+  .gov .arrow{color:var(--dim)}
+
+  /* ---------- PAPER / TRUST BAND ---------- */
+  .trust{background:var(--paper);color:var(--paper-ink)}
+  .trust .eyebrow{color:var(--blue)}
+  .trust .eyebrow .n{color:var(--paper-muted)}
+  .trust .sec-head h2{color:var(--paper-ink)}
+  .trust .sec-head p{color:var(--paper-muted)}
+  .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--paper-line)}
+  .trust-item{padding:30px 0;border-bottom:1px solid var(--paper-line);padding-right:40px}
+  .trust-item:nth-child(odd){border-right:1px solid var(--paper-line);padding-right:40px}
+  .trust-item:nth-child(even){padding-left:40px}
+  .trust-item .ti-n{font-family:var(--mono);font-size:12px;color:var(--blue);letter-spacing:.12em}
+  .trust-item h4{font-family:var(--disp);font-weight:500;font-size:22px;margin-top:12px;color:var(--paper-ink)}
+  .trust-item p{margin-top:12px;color:var(--paper-muted);font-size:15.5px}
+  @media(max-width:760px){
+    .trust-item{padding:26px 0 !important;border-right:0 !important}
+  }
+
+  /* ---------- ECOSYSTEM ---------- */
+  .eco-table{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+  .eco-row{display:grid;grid-template-columns:210px 1fr auto;gap:24px;align-items:center;padding:24px 26px;border-top:1px solid var(--line-soft);transition:.22s}
+  .eco-row:first-child{border-top:0}
+  .eco-row:hover{background:var(--navy-800)}
+  .eco-row .name{font-family:var(--disp);font-size:21px;color:var(--ivory);display:flex;flex-direction:column;gap:4px}
+  .eco-row .name span{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--beam)}
+  .eco-row .desc{color:var(--fog);font-size:15px}
+  .eco-row .desc b{color:var(--ivory);font-weight:600}
+  .eco-row .go{font-family:var(--mono);font-size:12.5px;color:var(--muted);white-space:nowrap;display:inline-flex;gap:7px;align-items:center;transition:.2s}
+  .eco-row:hover .go{color:var(--beam)}
+  .eco-note{margin-top:18px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+  /* ---------- USE CASES ---------- */
+  .uses{background:linear-gradient(180deg,var(--navy-900),var(--ink))}
+  .use-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden}
+  .use{background:var(--ink);padding:30px 26px;transition:.25s}
+  .use:hover{background:var(--navy-800)}
+  .use .un{font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .use h4{font-family:var(--ui);font-weight:600;font-size:18px;margin-top:16px;color:var(--ivory)}
+  .use p{margin-top:12px;color:var(--muted);font-size:14.5px;line-height:1.55}
+
+  /* ---------- SECURITY DIAGRAM ---------- */
+  .arch{border-top:1px solid var(--line-soft)}
+  .arch-wrap{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--navy-900),var(--ink));padding:clamp(20px,3vw,36px)}
+  .arch-wrap svg{width:100%;height:auto}
+
+  /* ---------- PLACEHOLDERS ---------- */
+  .future{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .fcard{border:1px dashed var(--line);border-radius:var(--r);padding:26px;color:var(--muted)}
+  .fcard .ph{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+  .fcard h4{font-family:var(--disp);font-weight:500;font-size:20px;color:var(--fog);margin-top:14px}
+  .fcard p{margin-top:10px;font-size:14px}
+  .logos{margin-top:34px;display:flex;flex-wrap:wrap;gap:14px}
+  .logos span{font-family:var(--mono);font-size:12.5px;color:var(--dim);border:1px solid var(--line);border-radius:8px;padding:10px 18px}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:linear-gradient(180deg,var(--ink),var(--navy-900))}
+  .contact-in{border:1px solid var(--line);border-radius:calc(var(--r) + 6px);background:linear-gradient(160deg,var(--navy-800),var(--navy-900));padding:clamp(32px,6vw,72px);position:relative;overflow:hidden}
+  .contact-in .cglow{position:absolute;right:-10%;top:-40%;width:60%;height:160%;background:radial-gradient(closest-side,rgba(46,107,240,.22),transparent 70%);pointer-events:none}
+  .contact-in .inner{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+  .contact h2{font-family:var(--disp);font-weight:400;font-size:clamp(28px,4vw,44px);line-height:1.06}
+  .contact p{margin-top:18px;color:var(--fog);max-width:46ch}
+  .mail{margin-top:26px;display:inline-flex}
+  .mail a{font-family:var(--mono);font-size:15px;color:var(--beam);border:1px solid var(--line);padding:14px 22px;border-radius:12px;transition:.2s;display:inline-flex;gap:10px;align-items:center}
+  .mail a:hover{border-color:var(--blue-bright);color:#fff;background:rgba(46,107,240,.1)}
+  .contact .aside{border-left:1px solid var(--line);padding-left:34px}
+  .contact .aside .row{padding:14px 0;border-bottom:1px solid var(--line-soft)}
+  .contact .aside .row:last-child{border-bottom:0}
+  .contact .aside .l{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .contact .aside .d{margin-top:4px;color:var(--ivory);font-size:15px}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line);padding:60px 0 44px;background:var(--ink)}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:44px;border-bottom:1px solid var(--line-soft)}
+  .foot-col h5{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin:0 0 16px}
+  .foot-col a{display:block;color:var(--fog);font-size:14.5px;padding:6px 0;transition:.2s}
+  .foot-col a:hover{color:var(--beam)}
+  .foot-brand .word{font-family:var(--disp);font-size:20px}
+  .foot-brand .word .ai{color:var(--beam)}
+  .foot-brand p{margin-top:16px;color:var(--muted);font-size:14px;max-width:34ch}
+  .foot-bot{display:flex;justify-content:space-between;align-items:center;padding-top:26px;gap:16px;flex-wrap:wrap}
+  .foot-bot p{font-family:var(--mono);font-size:12px;color:var(--dim)}
+  .foot-bot .made{color:var(--muted)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-vis{max-width:320px;margin:0 auto;order:-1}
+    .clusters{grid-template-columns:repeat(2,1fr)}
+    .cluster:nth-child(odd){border-left:0}
+    .contact-in .inner{grid-template-columns:1fr}
+    .contact .aside{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:24px}
+    .foot-top{grid-template-columns:1fr 1fr}
+    .use-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:720px){
+    nav.links,.nav-cta .btn:not(.menu){display:none}
+    .menu-btn{display:block}
+    .proof-strip{grid-template-columns:1fr 1fr}
+    .proof-strip div:nth-child(3){border-left:0}
+    .what-grid{grid-template-columns:1fr;gap:36px}
+    .layer{grid-template-columns:1fr;gap:8px}
+    .trust-grid{grid-template-columns:1fr}
+    .trust-item:nth-child(odd){border-right:0;padding-right:0}
+    .trust-item:nth-child(even){padding-left:0}
+    .eco-row{grid-template-columns:1fr;gap:10px}
+    .eco-row .go{justify-self:start}
+    .use-grid{grid-template-columns:1fr}
+    .future{grid-template-columns:1fr}
+    body{font-size:16px}
+  }
+
+  /* mobile menu */
+  .m-menu{position:fixed;inset:0;z-index:80;background:rgba(7,14,30,.98);backdrop-filter:blur(8px);display:none;flex-direction:column;padding:24px var(--gut)}
+  .m-menu.open{display:flex}
+  .m-menu .top{display:flex;justify-content:space-between;align-items:center;height:48px}
+  .m-menu nav{margin-top:40px;display:flex;flex-direction:column;gap:6px}
+  .m-menu nav a{font-family:var(--disp);font-size:30px;color:var(--ivory);padding:12px 0;border-bottom:1px solid var(--line-soft)}
+  .m-menu .btn{margin-top:30px;justify-content:center}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav scrolled" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Litehouse AI Technologies home">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 3 L20 27 H12 Z" fill="#EAEEF7"></path>
+        <rect x="13.4" y="8" width="5.2" height="1.6" fill="#0C1A32"></rect>
+        <rect x="12.9" y="13" width="6.2" height="1.6" fill="#0C1A32"></rect>
+        <rect x="14.4" y="4.4" width="3.2" height="3.6" rx="1.6" fill="#2E6BF0"></rect>
+        <path d="M16 6 L3 2 L7 6 Z" fill="#7DB9EE" opacity=".85"></path>
+        <path d="M16 6 L29 2 L25 6 Z" fill="#7DB9EE" opacity=".85"></path>
+        <path d="M6 28 Q11 25 16 28 T26 28" stroke="#2E6BF0" stroke-width="1.8" fill="none"></path>
+        <path d="M6 30.5 Q11 27.5 16 30.5 T26 30.5" stroke="#4F8EF7" stroke-width="1.4" fill="none" opacity=".6"></path>
+      </svg>
+      <span class="word"><b>Litehouse</b> <span class="ai">AI</span></span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#platform">Platform</a>
+      <a href="#security">Security</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#contact">Company</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn solid" href="#ecosystem">Explore the work</a>
+      <button class="menu-btn menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="m-menu" id="mMenu">
+  <div class="top">
+    <span class="word" style="font-family:var(--disp);font-size:20px"><b>Litehouse</b> <span class="ai" style="color:var(--beam)">AI</span></span>
+    <button class="menu-btn" id="mClose" aria-label="Close menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.7"></path></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="#platform" data-close="">Platform</a>
+    <a href="#security" data-close="">Security</a>
+    <a href="#ecosystem" data-close="">Ecosystem</a>
+    <a href="#solutions" data-close="">Solutions</a>
+    <a href="#contact" data-close="">Company</a>
+  </nav>
+  <a class="btn solid" href="#ecosystem" data-close="">Explore the work</a>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" style="padding-top:clamp(40px,7vh,90px)">
+  <div class="beam" aria-hidden="true">
+    <div class="beam-glow"></div>
+    <div class="beam-ray"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <span class="eyebrow"><span class="n">01</span> Litehouse AI Technologies</span>
+        <h1 style="margin-top:22px">The operating system for <em>regulated finance.</em></h1>
+        <p class="lede">Litehouse AI Technologies designs and builds the AI infrastructure that regulated lending runs on — compliance, credit, audit and property intelligence. What follows is a record of that work: the platform, the products, and the way they are engineered. A showcase, not a sales page.</p>
+        <div class="hero-cta">
+          <a class="btn solid" href="#ecosystem">Explore the work</a>
+          <a class="btn" href="#platform">How it's built</a>
+        </div>
+        <p class="hero-note">A showcase of work by Litehouse AI Technologies · Not a product offered to institutions</p>
+      </div>
+      <div class="hero-vis reveal in" aria-hidden="true">
+        <svg viewBox="0 0 400 400" fill="none">
+          <defs>
+            <radialgradient id="hg" cx="50%" cy="42%" r="60%">
+              <stop offset="0%" stop-color="#16305A"></stop><stop offset="100%" stop-color="#070E1E"></stop>
+            </radialgradient>
+            <lineargradient id="beamG" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#7DB9EE" stop-opacity=".55"></stop><stop offset="100%" stop-color="#7DB9EE" stop-opacity="0"></stop>
+            </lineargradient>
+            <lineargradient id="tower" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#EAEEF7"></stop><stop offset="100%" stop-color="#AEBAD1"></stop>
+            </lineargradient>
+          </defs>
+          <circle cx="200" cy="200" r="196" fill="url(#hg)"></circle>
+          <circle cx="200" cy="200" r="150" stroke="#1C2C4A" stroke-width="1" fill="none"></circle>
+          <circle cx="200" cy="200" r="110" stroke="#152238" stroke-width="1" fill="none"></circle>
+          <!-- orbiting nodes -->
+          <g class="orbit">
+            <circle cx="200" cy="50" r="3.5" fill="#2E6BF0"></circle>
+            <circle cx="350" cy="200" r="3.5" fill="#4F8EF7"></circle>
+            <circle cx="200" cy="350" r="3.5" fill="#7DB9EE"></circle>
+            <circle cx="50" cy="200" r="3" fill="#2E6BF0"></circle>
+          </g>
+          <!-- beams -->
+          <path d="M186 150 L40 96 L60 150 Z" fill="url(#beamG)"></path>
+          <path d="M214 150 L360 96 L340 150 Z" fill="url(#beamG)"></path>
+          <!-- lighthouse -->
+          <path d="M200 118 L216 300 H184 Z" fill="url(#tower)"></path>
+          <rect x="188" y="150" width="24" height="6" fill="#0C1A32"></rect>
+          <rect x="185" y="185" width="30" height="6" fill="#0C1A32"></rect>
+          <rect x="182" y="225" width="36" height="6" fill="#0C1A32"></rect>
+          <rect x="192" y="98" width="16" height="22" rx="8" fill="#2E6BF0"></rect>
+          <circle cx="200" cy="109" r="4" fill="#A8D2F2"></circle>
+          <path d="M196 90 h8 l-2 8 h-4 Z" fill="#EAEEF7"></path>
+          <!-- waves -->
+          <path d="M120 312 Q160 300 200 312 T280 312" stroke="#2E6BF0" stroke-width="2.4" fill="none"></path>
+          <path d="M110 326 Q160 314 200 326 T290 326" stroke="#4F8EF7" stroke-width="2" fill="none" opacity=".65"></path>
+          <path d="M120 340 Q160 330 200 340 T280 340" stroke="#7DB9EE" stroke-width="1.6" fill="none" opacity=".4"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="proof-strip reveal in">
+      <div><div class="k">RBI · NHB · SEBI</div><div class="v">Indexed regulatory corpus</div></div>
+      <div><div class="k">20 / 60</div><div class="v">Agents · Maker–Checker–Validator</div></div>
+      <div><div class="k">On-prem</div><div class="v">Air-gappable deployment</div></div>
+      <div><div class="k">DPDP-ready</div><div class="v">Data sovereignty by design</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE DO ============ -->
+<section class="what" id="what">
+  <div class="wrap">
+    <div class="what-grid">
+      <div class="reveal in">
+        <span class="eyebrow"><span class="n">02</span> What we build</span>
+        <h2 style="margin-top:22px">Regulated lending is not a horizontal problem. We don't treat it like one.</h2>
+      </div>
+      <div class="body reveal in">
+        <p><strong>Litehouse AI Technologies builds Litehouse AI OS</strong> — an AI-native operating system for India's regulated lenders. It reads the rulebook, maps obligations to controls, tests those controls, prepares audit evidence, and embeds the same discipline into credit and operations.</p>
+        <p>Most AI tools generalise. Ours is built narrow and deep: on the Indian regulatory corpus, on the way an NBFC actually files and defends a decision, on the difference between an answer and an answer an auditor will accept.</p>
+        <div class="pillars">
+          <div class="row"><div class="lab">01</div><div class="txt"><b>Regulatory first, always</b>Every capability starts from the obligation, not the feature list.</div></div>
+          <div class="row"><div class="lab">02</div><div class="txt"><b>Audit-grade AI</b>Maker–Checker–Validator governance on every material action. Nothing reaches a human unchecked.</div></div>
+          <div class="row"><div class="lab">03</div><div class="txt"><b>Data sovereignty by design</b>Runs inside your perimeter — on-premise or air-gapped. Your data does not leave.</div></div>
+          <div class="row"><div class="lab">04</div><div class="txt"><b>Depth over breadth</b>One domain, understood completely, beats ten touched lightly.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATFORM ============ -->
+<section class="platform" id="platform">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><span class="n">03</span> The platform</span>
+      <h2>One operating system. Twenty agents. A governance layer a regulator can follow.</h2>
+      <p class="lede">Litehouse AI OS is an SLM-first, retrieval-grounded platform: a multi-LLM router directs work across a mesh of specialised agents, each grounded in a live index of Indian regulation and each subject to the same maker–checker–validator control.</p>
+    </div>
+
+    <div class="stack">
+      <div class="layer reveal in">
+        <div><div class="lname">Layer 01</div><div class="ltitle">Regulatory corpus</div></div>
+        <div class="ldesc">A deeply indexed, continuously refreshed corpus of Indian BFSI regulation — <code>RBI</code> <code>NHB</code> <code>SEBI</code> <code>DPDP</code> and more — with every obligation traceable to its source.</div>
+      </div>
+      <div class="layer reveal in">
+        <div><div class="lname">Layer 02</div><div class="ltitle">Retrieval &amp; reasoning</div></div>
+        <div class="ldesc">SLM-first retrieval-augmented generation with a <code>multi-LLM router</code>, a <code>Digital Twin</code> of the borrower and portfolio, and the <code>Validator</code> reasoning engine that grades and defends every inference.</div>
+      </div>
+      <div class="layer reveal in">
+        <div><div class="lname">Layer 03</div><div class="ltitle">Agent mesh</div></div>
+        <div class="ldesc">Twenty primary agents across five clusters, each fronted by <code>Maker</code> → <code>Checker</code> → <code>Validator</code> sub-agents — sixty in all — so drafting, verification and sign-off are separated by design.</div>
+      </div>
+      <div class="layer reveal in">
+        <div><div class="lname">Layer 04</div><div class="ltitle">Decision &amp; evidence</div></div>
+        <div class="ldesc">A decision engine that produces the output <em>and</em> the audit trail behind it — controls tested, exceptions flagged, evidence packaged, ready for a board or an examiner.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:44px" class="reveal in">
+      <span class="eyebrow" style="margin-bottom:20px"><span class="n">·</span> Five agent clusters</span>
+    </div>
+    <div class="clusters reveal in">
+      <div class="cluster"><div class="cn">C1</div><h4>Compliance &amp; Regulatory</h4><p>Reads regulation, maps obligations, tracks change, drafts and files.</p></div>
+      <div class="cluster"><div class="cn">C2</div><h4>Audit &amp; Controls</h4><p>Tests controls, gathers evidence, reconciles, prepares audit-ready packs.</p></div>
+      <div class="cluster"><div class="cn">C3</div><h4>Credit &amp; Underwriting</h4><p>Scores, builds the digital twin, reasons on risk, defends the decision.</p></div>
+      <div class="cluster"><div class="cn">C4</div><h4>Operations &amp; Customer</h4><p>Servicing, collections nudges, KYC and document intake at the edge.</p></div>
+      <div class="cluster"><div class="cn">C5</div><h4>Intelligence &amp; Growth</h4><p>Portfolio insight, sourcing, and the signals that move the estimate.</p></div>
+    </div>
+
+    <div class="gov reveal in">
+      <span>Every material action passes:</span>
+      <span class="chip">Maker</span><span class="arrow">→</span>
+      <span class="chip">Checker</span><span class="arrow">→</span>
+      <span class="chip">Validator</span><span class="arrow">→</span>
+      <span style="color:var(--fog)">Human sign-off</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECURITY / TRUST (paper band) ============ -->
+<section class="trust" id="security">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><span class="n">04</span> How it's built</span>
+      <h2>Built to be examined. Not just to demo.</h2>
+      <p>Regulated software has to be defensible, not just demoable. This is the discipline the work is built to — designed for the audit that comes after the deployment. Proof you can check, not a borrowed headline.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal in">
+        <div class="ti-n">01 — Deployment</div>
+        <h4>Your perimeter, your terms</h4>
+        <p>On-premise or air-gapped. The platform runs inside your infrastructure; sensitive data never has to leave your control. Open-source-native backend, no black-box dependency.</p>
+      </div>
+      <div class="trust-item reveal in">
+        <div class="ti-n">02 — Governance</div>
+        <h4>Separation of duties, enforced</h4>
+        <p>Maker–Checker–Validator is not a policy document — it is how the agents are wired. Drafting, verification and sign-off are handled by distinct agents, with humans on judgment and escalation.</p>
+      </div>
+      <div class="trust-item reveal in">
+        <div class="ti-n">03 — Traceability</div>
+        <h4>Every number traces to a source</h4>
+        <p>Each obligation maps to the regulation it came from; each decision carries the evidence behind it. Nothing is asserted that cannot be shown.</p>
+      </div>
+      <div class="trust-item reveal in">
+        <div class="ti-n">04 — Data protection</div>
+        <h4>DPDP-ready, sovereignty first</h4>
+        <p>Data residency, consent and purpose limitation are treated as architecture, not afterthoughts — aligned to India's Digital Personal Data Protection framework.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECURE ARCHITECTURE DIAGRAM ============ -->
+<section class="arch" id="architecture">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><span class="n">·</span> Deployment architecture</span>
+      <h2 style="font-size:clamp(24px,3vw,34px)">How it runs behind your edge.</h2>
+    </div>
+    <div class="arch-wrap reveal in">
+      <svg viewBox="0 0 1000 300" role="img" aria-label="Deployment architecture: users reach Cloudflare edge with WAF and TLS, which proxies to a hidden origin behind authenticated origin pulls, which serves the Litehouse OS running inside the institution&#39;s perimeter.">
+        <defs>
+          <lineargradient id="boxg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C1A32"></stop><stop offset="1" stop-color="#091428"></stop></lineargradient>
+          <marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#4F8EF7"></path></marker>
+        </defs>
+        <!-- lanes -->
+        <text x="90" y="30" fill="#7C8AA6" font-family="IBM Plex Mono,monospace" font-size="12" letter-spacing="2">PUBLIC</text>
+        <text x="405" y="30" fill="#7C8AA6" font-family="IBM Plex Mono,monospace" font-size="12" letter-spacing="2">CLOUDFLARE EDGE</text>
+        <text x="770" y="30" fill="#7C8AA6" font-family="IBM Plex Mono,monospace" font-size="12" letter-spacing="2">YOUR PERIMETER</text>
+        <line x1="330" y1="45" x2="330" y2="285" stroke="#152238" stroke-dasharray="4 5"></line>
+        <line x1="700" y1="45" x2="700" y2="285" stroke="#152238" stroke-dasharray="4 5"></line>
+
+        <!-- user -->
+        <rect x="40" y="120" width="150" height="64" rx="10" fill="url(#boxg)" stroke="#1C2C4A"></rect>
+        <text x="115" y="148" fill="#EAEEF7" font-family="Inter Tight,sans-serif" font-size="15" text-anchor="middle" font-weight="600">Borrowers · Staff</text>
+        <text x="115" y="168" fill="#7C8AA6" font-family="IBM Plex Mono,monospace" font-size="11" text-anchor="middle">HTTPS</text>
+
+        <!-- cloudflare -->
+        <rect x="360" y="95" width="150" height="54" rx="10" fill="url(#boxg)" stroke="#2E6BF0"></rect>
+        <text x="435" y="118" fill="#EAEEF7" font-family="Inter Tight,sans-serif" font-size="14" text-anchor="middle" font-weight="600">WAF + DDoS</text>
+        <text x="435" y="136" fill="#7DB9EE" font-family="IBM Plex Mono,monospace" font-size="10" text-anchor="middle">Managed rules</text>
+        <rect x="360" y="160" width="150" height="54" rx="10" fill="url(#boxg)" stroke="#2E6BF0"></rect>
+        <text x="435" y="183" fill="#EAEEF7" font-family="Inter Tight,sans-serif" font-size="14" text-anchor="middle" font-weight="600">TLS · DNSSEC</text>
+        <text x="435" y="201" fill="#7DB9EE" font-family="IBM Plex Mono,monospace" font-size="10" text-anchor="middle">Full (strict)</text>
+
+        <!-- origin -->
+        <rect x="560" y="120" width="120" height="64" rx="10" fill="url(#boxg)" stroke="#1C2C4A"></rect>
+        <text x="620" y="146" fill="#EAEEF7" font-family="Inter Tight,sans-serif" font-size="14" text-anchor="middle" font-weight="600">Hidden origin</text>
+        <text x="620" y="166" fill="#7C8AA6" font-family="IBM Plex Mono,monospace" font-size="10" text-anchor="middle">IP not exposed</text>
+
+        <!-- OS -->
+        <rect x="740" y="95" width="220" height="120" rx="12" fill="url(#boxg)" stroke="#2E6BF0"></rect>
+        <text x="850" y="124" fill="#EAEEF7" font-family="Fraunces,serif" font-size="18" text-anchor="middle">Litehouse AI OS</text>
+        <text x="850" y="150" fill="#AEBAD1" font-family="Inter Tight,sans-serif" font-size="12" text-anchor="middle">Corpus · Agent mesh</text>
+        <text x="850" y="170" fill="#AEBAD1" font-family="Inter Tight,sans-serif" font-size="12" text-anchor="middle">Maker–Checker–Validator</text>
+        <text x="850" y="194" fill="#7DB9EE" font-family="IBM Plex Mono,monospace" font-size="10" text-anchor="middle">On-prem / air-gapped</text>
+
+        <!-- arrows -->
+        <line x1="190" y1="152" x2="352" y2="140" stroke="#4F8EF7" stroke-width="1.6" marker-end="url(#arw)"></line>
+        <line x1="510" y1="150" x2="552" y2="150" stroke="#4F8EF7" stroke-width="1.6" marker-end="url(#arw)"></line>
+        <line x1="680" y1="150" x2="732" y2="150" stroke="#4F8EF7" stroke-width="1.6" marker-end="url(#arw)"></line>
+        <text x="520" y="240" fill="#7C8AA6" font-family="IBM Plex Mono,monospace" font-size="11" text-anchor="middle">Authenticated Origin Pulls — only Cloudflare can reach the origin</text>
+        <path d="M435 214 v18 h150" stroke="#1C2C4A" stroke-width="1" fill="none" stroke-dasharray="3 4"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ECOSYSTEM ============ -->
+<section class="ecosystem" id="ecosystem">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><span class="n">05</span> The ecosystem</span>
+      <h2>One stack. A family of products on top of it.</h2>
+      <p class="lede">Litehouse AI OS is the shared foundation. Each product is a specialised surface on the same governed core — origination, SME credit, compliance, and property intelligence — so an institution can adopt one and grow into the rest.</p>
+    </div>
+    <div class="eco-table reveal in">
+      <a class="eco-row" href="https://origin8s.com/" target="_blank" rel="noopener">
+        <div class="name"><span>Origination</span>Origin8</div>
+        <div class="desc">The origination front-end and open-source AI backend for large lenders. <b>Agent infrastructure for India's lending system.</b></div>
+        <div class="go">origin8s.com ↗</div>
+      </a>
+      <a class="eco-row" href="https://smeband.com/" target="_blank" rel="noopener">
+        <div class="name"><span>SME credit</span>SMEBand</div>
+        <div class="desc">India's MSME credit score and instant-loan platform. <b>A GST-based score and a route to 50+ lenders.</b></div>
+        <div class="go">smeband.com ↗</div>
+      </a>
+      <a class="eco-row" href="https://litehouseiq.com/" target="_blank" rel="noopener">
+        <div class="name"><span>Compliance OS · flagship</span>LitehouseIQ</div>
+        <div class="desc">The AI compliance, credit and audit OS for NBFCs and HFCs. <b>The rulebook, read and operationalised.</b></div>
+        <div class="go">litehouseiq.com ↗</div>
+      </a>
+      <a class="eco-row" href="https://myhomegpt.in/" target="_blank" rel="noopener">
+        <div class="name"><span>Property data</span>MyHomeGPT</div>
+        <div class="desc">Agentic property-data infrastructure — locality, title and valuation intelligence for mortgage. <b>The digital twin of a property.</b></div>
+        <div class="go">myhomegpt.in ↗</div>
+      </a>
+      <a class="eco-row" href="https://apnaghargpt.com/" target="_blank" rel="noopener">
+        <div class="name"><span>Discovery</span>ApnaGharGPT</div>
+        <div class="desc">Discovery, prospecting and lead origination for financial services and healthcare. <b>Demand, found and qualified.</b></div>
+        <div class="go">apnaghargpt.com ↗</div>
+      </a>
+    </div>
+    <p class="eco-note">Research &amp; adjacent work: <strong style="color:var(--fog)">TwinSim</strong> — a digital twin of Indian financial behaviour · <strong style="color:var(--fog)">BhumiQ</strong> — property credit infrastructure, "CIBIL for property."</p>
+  </div>
+</section>
+
+<!-- ============ SOLUTIONS / USE CASES ============ -->
+<section class="uses" id="solutions">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><span class="n">06</span> What the work addresses</span>
+      <h2>The problems these systems are built around.</h2>
+    </div>
+    <div class="use-grid reveal in">
+      <div class="use"><div class="un">S1</div><h4>NBFCs &amp; HFCs</h4><p>Turn a growing regulatory surface into a system that reads change, tests controls and keeps audit evidence current — without adding headcount.</p></div>
+      <div class="use"><div class="un">S2</div><h4>MSME &amp; SME lenders</h4><p>Score thin-file borrowers on alternative data, defend each decision, and route to the right capital with the underwriting trail intact.</p></div>
+      <div class="use"><div class="un">S3</div><h4>Banks &amp; co-lending</h4><p>Bring partner-originated books onto a shared, examinable standard so co-lending scales without diluting control.</p></div>
+      <div class="use"><div class="un">S4</div><h4>Mortgage &amp; property</h4><p>Cross-check title and valuation in minutes, flag defects and adverse remarks, keep the legal opinion human.</p></div>
+      <div class="use"><div class="un">S5</div><h4>Compliance &amp; audit teams</h4><p>Automate the 80% that is gathering, drafting and reconciling; keep the 20% of judgment where it belongs — with your people.</p></div>
+      <div class="use"><div class="un">S6</div><h4>Boards &amp; examiners</h4><p>A single, traceable view of obligations, controls and exceptions — ready when the board or the regulator asks.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUTURE / PLACEHOLDERS ============ -->
+<section class="future-sec" id="insights">
+  <div class="wrap">
+    <div class="sec-head reveal in">
+      <span class="eyebrow"><span class="n">07</span> Proof &amp; perspective</span>
+      <h2 style="font-size:clamp(24px,3vw,36px)">Case studies and field notes, as they publish.</h2>
+    </div>
+    <div class="future reveal in">
+      <div class="fcard"><div class="ph">Case study — placeholder</div><h4>Compliance close, automated</h4><p>An NBFC's quarterly regulatory close, and what changed when the gathering and drafting moved to agents. Coming soon.</p></div>
+      <div class="fcard"><div class="ph">Insight — placeholder</div><h4>What audit-grade AI means</h4><p>Why separation of duties has to be architectural, and how maker–checker–validator holds up under examination. Coming soon.</p></div>
+      <div class="fcard"><div class="ph">Field note — placeholder</div><h4>Title defects at scale</h4><p>Reading title chains and valuation reports across a mortgage book — where the machine helps and where it must stop.</p></div>
+    </div>
+    <div class="logos reveal in" aria-label="Partners — placeholder">
+      <span>Partner logo</span><span>Partner logo</span><span>Partner logo</span><span>Audit alliance</span><span>System integrator</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-in reveal in">
+      <div class="cglow"></div>
+      <div class="inner">
+        <div>
+          <span class="eyebrow"><span class="n">08</span> Get in touch</span>
+          <h2 style="margin-top:20px">A record of what we've built.</h2>
+          <p>This site is a showcase of work by Litehouse AI Technologies. It is not an offer of products or services, and the platform is not available to institutions through this page. For general or media enquiries:</p>
+          <div class="mail">
+            <a href="mailto:contact@litehouseco.com">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6"></path></svg>
+              contact@litehouseco.com
+            </a>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="row"><div class="l">Focus</div><div class="d">AI infrastructure for regulated finance</div></div>
+          <div class="row"><div class="l">Status</div><div class="d">Showcase · not offered to institutions</div></div>
+          <div class="row"><div class="l">Based in</div><div class="d">India · Built for the Indian rulebook</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="word"><b style="font-family:var(--disp);font-weight:600">Litehouse</b> <span class="ai">AI</span></span>
+        <p>The operating system for regulated finance. A showcase of work built in India by Litehouse AI Technologies — not a product offered to institutions.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Platform</h5>
+        <a href="#platform">Litehouse AI OS</a>
+        <a href="#security">Trust &amp; security</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#solutions">Solutions</a>
+      </div>
+      <div class="foot-col">
+        <h5>Ecosystem</h5>
+        <a href="https://origin8s.com/" target="_blank" rel="noopener">Origin8</a>
+        <a href="https://smeband.com/" target="_blank" rel="noopener">SMEBand</a>
+        <a href="https://litehouseiq.com/" target="_blank" rel="noopener">LitehouseIQ</a>
+        <a href="https://myhomegpt.in/" target="_blank" rel="noopener">MyHomeGPT</a>
+        <a href="https://apnaghargpt.com/" target="_blank" rel="noopener">ApnaGharGPT</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="#what">About</a>
+        <a href="#insights">Insights</a>
+        <a href="mailto:contact@litehouseco.com">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <p>© <span id="yr">2026</span> Litehouse AI Technologies. All rights reserved.</p>
+      <p class="made">contact@litehouseco.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    // year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // nav shadow on scroll
+    var nav = document.getElementById('nav');
+    var onScroll = function(){ nav.classList.toggle('scrolled', window.scrollY > 12); };
+    onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+    // reveal on scroll
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if(reduce || !('IntersectionObserver' in window)){
+      els.forEach(function(e){ e.classList.add('in'); });
+    } else {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+      els.forEach(function(e){ io.observe(e); });
+    }
+
+    // mobile menu
+    var mMenu = document.getElementById('mMenu');
+    var open = function(){ mMenu.classList.add('open'); document.getElementById('menuBtn').setAttribute('aria-expanded','true'); };
+    var close = function(){ mMenu.classList.remove('open'); document.getElementById('menuBtn').setAttribute('aria-expanded','false'); };
+    document.getElementById('menuBtn').addEventListener('click', open);
+    document.getElementById('mClose').addEventListener('click', close);
+    document.querySelectorAll('[data-close]').forEach(function(a){ a.addEventListener('click', close); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  })();
+</script>
+
+
+</body></html>
