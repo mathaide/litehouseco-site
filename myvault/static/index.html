@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVault — Lender Intelligence OS (Sovereign Demo)</title>
+<style>
+  :root{ --ink:#111; --mut:#666; --line:#d8d8d8; --bg:#fff; --soft:#f5f5f5; --soft2:#ececec; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fafafa;line-height:1.45}
+  header{background:#111;color:#fff;padding:14px 22px}
+  header .row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  header h1{font-size:18px;margin:0;letter-spacing:.5px}
+  header h1 span{font-weight:400;color:#bbb}
+  .badge{font-size:11px;border:1px solid #555;padding:3px 9px;border-radius:3px;color:#ddd;letter-spacing:.4px}
+  .wrap{max-width:1100px;margin:0 auto;padding:22px}
+  .grid{display:grid;grid-template-columns:330px 1fr;gap:18px}
+  @media(max-width:860px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px;margin-bottom:18px}
+  .card h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);margin:0 0 12px}
+  select,button,input[type=file]{font:inherit}
+  select{width:100%;padding:9px;border:1px solid var(--line);border-radius:5px;background:#fff}
+  button{cursor:pointer;border:1px solid #111;background:#111;color:#fff;padding:9px 14px;border-radius:5px}
+  button.ghost{background:#fff;color:#111}
+  button:disabled{opacity:.4;cursor:default}
+  .kv{display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:6px 0;font-size:14px}
+  .kv span:last-child{font-weight:600}
+  .rec{display:inline-block;font-size:20px;font-weight:700;letter-spacing:1px;padding:8px 16px;border:2px solid #111;border-radius:5px}
+  .rec.APPROVE{background:#111;color:#fff}
+  .rec.REFER{background:#fff;color:#111}
+  .rec.DECLINE{background:#fff;color:#111;border-style:dashed}
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+  @media(max-width:560px){.metrics{grid-template-columns:repeat(2,1fr)}}
+  .metric{border:1px solid var(--line);border-radius:5px;padding:10px}
+  .metric .l{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
+  .metric .v{font-size:18px;font-weight:700;margin-top:3px}
+  ul.reasons{list-style:none;padding:0;margin:8px 0}
+  ul.reasons li{padding:8px 10px;border:1px solid var(--line);border-left:4px solid #999;border-radius:4px;margin-bottom:6px;font-size:13.5px}
+  li.FAIL{border-left-color:#111;background:#f2f2f2}
+  li.REFER{border-left-color:#777}
+  li.OK{border-left-color:#bbb;color:#444}
+  .tag{font-size:10px;font-weight:700;letter-spacing:.5px;border:1px solid #111;padding:1px 6px;border-radius:3px;margin-right:7px}
+  .review{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  textarea{width:100%;min-height:54px;border:1px solid var(--line);border-radius:5px;padding:8px;font:inherit;margin-top:8px}
+  table.audit{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.audit th,table.audit td{text-align:left;border-bottom:1px solid var(--line);padding:6px 8px;vertical-align:top}
+  table.audit th{color:var(--mut);text-transform:uppercase;font-size:10px;letter-spacing:.5px}
+  .muted{color:var(--mut);font-size:12.5px}
+  .foot{max-width:1100px;margin:0 auto;padding:0 22px 30px;color:var(--mut);font-size:12px}
+  .pill{font-size:11px;background:var(--soft2);border-radius:20px;padding:3px 10px;color:#333}
+  .hl{display:flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 14px;margin-bottom:18px;font-size:13px}
+  .dot{width:8px;height:8px;border-radius:50%;background:#111;display:inline-block}
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>MyVault <span>— Lender Intelligence OS</span></h1>
+    <span><span class="badge" id="hbadge">SOVEREIGN · INDIA-RESIDENT · RBI / DPDP-READY · OFFLINE</span> <a href="/__logout" style="color:#bbb;font-size:12px;margin-left:12px;text-decoration:none">Sign out</a></span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hl">
+    <span class="dot"></span>
+    <div><b>Demo scope:</b> credit-decision wedge — ingest borrower data, run a deterministic policy engine, produce an explainable decision with maker-checker control and a full audit trail. Everything runs locally; no external calls.</div>
+  </div>
+
+  <div class="grid">
+    <!-- LEFT -->
+    <div>
+      <div class="card">
+        <h2>1 · Select borrower</h2>
+        <select id="borrowerSel"></select>
+        <div id="bdetail" style="margin-top:12px"></div>
+        <button id="runBtn" style="width:100%;margin-top:14px">Run MyVault decision</button>
+      </div>
+
+      <div class="card">
+        <h2>Ingest a bank statement (CSV)</h2>
+        <p class="muted">Demonstrates local parsing. Columns: month, salary_credit, emi_debits, avg_balance, bounces.</p>
+        <input type="file" id="csvFile" accept=".csv"/>
+        <button class="ghost" id="sampleBtn" style="margin-top:10px">Load sample CSV</button>
+        <div id="parsed" class="muted" style="margin-top:10px"></div>
+      </div>
+
+      <div class="card">
+        <h2>Ingest a real PDF (desktop)</h2>
+        <p class="muted">Drop in a bank-statement PDF. It is parsed to structured data on this machine — nothing leaves.</p>
+        <input type="file" id="pdfFile" accept=".pdf"/>
+        <button class="ghost" id="samplePdfBtn" style="margin-top:10px">Load sample PDF</button>
+        <div id="pdfParsed" class="muted" style="margin-top:10px"></div>
+        <button id="pdfDecideBtn" style="margin-top:10px;width:100%;display:none">Run decision on parsed statement</button>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+      <div class="card" id="resultCard" style="display:none">
+        <h2>2 · MyVault recommendation <span class="pill">maker: Analyst Agent</span></h2>
+        <div id="recBox"></div>
+        <div class="metrics" id="metrics"></div>
+        <h2 style="margin-top:8px">Why — explainable reasons</h2>
+        <ul class="reasons" id="reasons"></ul>
+      </div>
+
+      <div class="card" id="reviewCard" style="display:none">
+        <h2>3 · Maker-checker review <span class="pill">checker: Credit Officer</span></h2>
+        <p class="muted">A human checker confirms or overrides the agent. An override requires a written reason — enforced.</p>
+        <textarea id="reviewReason" placeholder="Reason (required to override)…"></textarea>
+        <div class="review">
+          <button id="confirmBtn">Confirm recommendation</button>
+          <button class="ghost" id="overrideApprove">Override → Approve</button>
+          <button class="ghost" id="overrideDecline">Override → Decline</button>
+        </div>
+        <div id="reviewMsg" class="muted" style="margin-top:10px"></div>
+      </div>
+
+      <div class="card">
+        <h2>4 · Audit trail <span class="pill">tamper-evident log</span></h2>
+        <table class="audit"><thead><tr><th>Time</th><th>Event</th><th>Actor</th><th>Detail</th></tr></thead>
+        <tbody id="auditBody"><tr><td colspan="4" class="muted">No activity yet.</td></tr></tbody></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  MyVault sovereign demo · deterministic policy engine (no LLM in this build) · sample data only · not a credit decision for any real applicant.
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let borrowers = [], current = null, lastDecision = null;
+const fmt = n => (n==null?"—":"₹"+Number(n).toLocaleString("en-IN"));
+const pct = n => (n==null?"—":(n*100).toFixed(0)+"%");
+
+async function api(path, opts){ const r = await fetch(path, opts); return r.json(); }
+
+async function init(){
+  borrowers = await api("/api/borrowers");
+  const sel = $("#borrowerSel");
+  sel.innerHTML = borrowers.map(b=>`<option value="${b.id}">${b.name} — ${b.loan_product} · ${fmt(b.requested_amount)}</option>`).join("");
+  sel.onchange = ()=>showDetail(sel.value);
+  showDetail(borrowers[0].id);
+  refreshAudit();
+}
+function showDetail(id){
+  current = borrowers.find(b=>b.id===id);
+  const b = current;
+  $("#bdetail").innerHTML = `
+    <div class="kv"><span>Product</span><span>${b.loan_product}</span></div>
+    <div class="kv"><span>Requested</span><span>${fmt(b.requested_amount)}</span></div>
+    <div class="kv"><span>Tenure</span><span>${b.tenure_months} mo</span></div>
+    <div class="kv"><span>Declared income</span><span>${fmt(b.declared_monthly_income)}/mo</span></div>
+    <div class="kv"><span>Bureau score</span><span>${b.bureau.score}</span></div>`;
+  $("#resultCard").style.display="none";
+  $("#reviewCard").style.display="none";
+}
+
+$("#runBtn").onclick = async ()=>{
+  lastDecision = await api("/api/decide",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({borrower_id:current.id})});
+  renderResult(lastDecision);
+  refreshAudit();
+};
+
+function renderResult(d){
+  const r = d.result, m = r.metrics;
+  $("#resultCard").style.display="block";
+  $("#recBox").innerHTML = `<span class="rec ${r.recommendation}">${r.recommendation}</span>`;
+  const cells = [
+    ["Observed income", fmt(m.observed_income)+"/mo"],
+    ["Proposed EMI", fmt(m.proposed_emi)],
+    ["FOIR", pct(m.foir)],
+    ["LTV", m.ltv==null?"—":pct(m.ltv)],
+    ["Bureau", m.bureau_score],
+    ["Bounces", m.bounces+" / "+m.statement_months+"mo"]
+  ];
+  $("#metrics").innerHTML = cells.map(c=>`<div class="metric"><div class="l">${c[0]}</div><div class="v">${c[1]}</div></div>`).join("");
+  let lis = r.reasons.map(x=>`<li class="${x.level}"><span class="tag">${x.level}</span>${x.text}</li>`).join("");
+  lis += r.positives.map(x=>`<li class="OK"><span class="tag">OK</span>${x}</li>`).join("");
+  $("#reasons").innerHTML = lis || '<li class="OK">No flags.</li>';
+  $("#reviewCard").style.display="block";
+  $("#reviewMsg").textContent="";
+  $("#reviewReason").value="";
+}
+
+async function review(action){
+  const reason = $("#reviewReason").value.trim();
+  const res = await api("/api/review",{method:"POST",headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({decision_id:lastDecision.decision_id, action, checker:"Credit Officer", reason})});
+  if(res.error){ $("#reviewMsg").textContent = "⚠ "+res.error; return; }
+  $("#reviewMsg").textContent = "Recorded: "+action+(reason?(" — "+reason):"")+". Logged to audit trail.";
+  refreshAudit();
+}
+$("#confirmBtn").onclick = ()=>review("APPROVE");
+$("#overrideApprove").onclick = ()=>review("OVERRIDE");
+$("#overrideDecline").onclick = ()=>review("OVERRIDE");
+
+async function refreshAudit(){
+  const rows = (await api("/api/audit")).reverse();
+  const body = $("#auditBody");
+  if(!rows.length){ body.innerHTML='<tr><td colspan="4" class="muted">No activity yet.</td></tr>'; return; }
+  body.innerHTML = rows.map(r=>{
+    const detail = r.recommendation ? ("→ "+r.recommendation)
+      : (r.action ? (r.action+(r.reason?(": "+r.reason):"")) : "");
+    return `<tr><td>${(r.ts||"").replace("T"," ")}</td><td>${r.event}</td><td>${r.actor||""}</td><td>${(r.borrower||"")} ${detail}</td></tr>`;
+  }).join("");
+}
+
+$("#sampleBtn").onclick = async ()=>{
+  const txt = await (await fetch("/api/sample-statement")).text();
+  parseCsv(txt);
+};
+$("#csvFile").onchange = e=>{
+  const f = e.target.files[0]; if(!f) return;
+  const rd = new FileReader(); rd.onload = ()=>parseCsv(rd.result); rd.readAsText(f);
+};
+async function parseCsv(text){
+  const res = await api("/api/parse-statement",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({csv_text:text})});
+  if(res.error){ $("#parsed").textContent="⚠ "+res.error; return; }
+  const d = res.derived;
+  $("#parsed").innerHTML = `Parsed ${d.n_months} months locally → observed income <b>${fmt(d.observed_income)}/mo</b>, avg EMI ${fmt(d.existing_emi)}, ${d.bounces} bounce(s). <span class="muted">No data left the container.</span>`;
+}
+
+let parsedBorrower=null;
+function showParsed(res){
+  if(res.error){ $("#pdfParsed").textContent="⚠ "+res.error; $("#pdfDecideBtn").style.display="none"; return; }
+  const d=res.derived; parsedBorrower=res.borrower;
+  $("#pdfParsed").innerHTML=`Parsed ${d.n_months} months from PDF → income <b>${fmt(d.observed_income)}/mo</b>, avg EMI ${fmt(d.existing_emi)}, ${d.bounces} bounce(s). <span class="muted">No data left this machine.</span>`;
+  $("#pdfDecideBtn").style.display = parsedBorrower ? "block" : "none";
+}
+$("#samplePdfBtn").onclick=async ()=>{ $("#pdfParsed").textContent="Parsing sample PDF…"; showParsed(await api("/api/parse-sample-pdf")); };
+$("#pdfFile").onchange=e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const rd=new FileReader();
+  rd.onload=async ()=>{ $("#pdfParsed").textContent="Parsing PDF…"; showParsed(await api("/api/parse-pdf",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({pdf_base64:rd.result})})); };
+  rd.readAsDataURL(f);
+};
+$("#pdfDecideBtn").onclick=async ()=>{
+  if(!parsedBorrower) return;
+  lastDecision=await api("/api/decide",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({borrower:parsedBorrower})});
+  renderResult(lastDecision); refreshAudit();
+};
+
+init();
+</script>
+</body>
+</html>
