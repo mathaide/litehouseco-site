@@ -1,0 +1,2545 @@
+{
+ "categories": [
+  {
+   "slug": "prospecting",
+   "name": "Prospecting",
+   "description": "Signal discovery & cohort building"
+  },
+  {
+   "slug": "qualification",
+   "name": "Qualification",
+   "description": "Lead enrichment & scoring"
+  },
+  {
+   "slug": "engagement",
+   "name": "Engagement",
+   "description": "Multi-channel outreach orchestration"
+  },
+  {
+   "slug": "conversion",
+   "name": "Conversion",
+   "description": "Login & funnel optimization"
+  },
+  {
+   "slug": "matching",
+   "name": "Matching",
+   "description": "Lender & product matching"
+  },
+  {
+   "slug": "funding",
+   "name": "Funding",
+   "description": "Underwriting & approval orchestration"
+  },
+  {
+   "slug": "learning",
+   "name": "Learning",
+   "description": "Closed-loop optimization & retraining"
+  }
+ ],
+ "agents": [
+  {
+   "id": "f997d4d1-a72c-4164-9046-7452b4b6f117",
+   "name": "SignalHunter",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "SignalHunter — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.7.5"
+  },
+  {
+   "id": "a07f476c-2711-493f-bae9-f5b3a38a4e1a",
+   "name": "IntentScout",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "IntentScout — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.2.9"
+  },
+  {
+   "id": "3201f32b-9b6e-476a-a654-e32535b04446",
+   "name": "CohortBuilder",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "CohortBuilder — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.20"
+  },
+  {
+   "id": "1f57f139-3cf4-459b-9f64-14b4fc437e67",
+   "name": "MarketRadar",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "MarketRadar — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.30"
+  },
+  {
+   "id": "6db673b5-9d3a-4c5a-abe6-0a7c6c36f2b1",
+   "name": "TriggerWatch",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "TriggerWatch — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.7.19"
+  },
+  {
+   "id": "33b1f2c5-d63c-47a7-99de-f238b00c30d9",
+   "name": "AudienceMiner",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "AudienceMiner — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.0"
+  },
+  {
+   "id": "f68b9b7f-505f-429b-b151-3dbedd249a79",
+   "name": "LookalikeForger",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "LookalikeForger — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.10"
+  },
+  {
+   "id": "ad126021-ea4f-4068-95ad-3f46c9a8dd52",
+   "name": "DataHarvester",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "DataHarvester — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.28"
+  },
+  {
+   "id": "90c33137-68ab-49d6-af69-aa5790d30702",
+   "name": "TopicTracker",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "TopicTracker — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.4.15"
+  },
+  {
+   "id": "d06b837e-86a2-46c7-8909-2d506ed16fe1",
+   "name": "AccountSpotter",
+   "category": "prospecting",
+   "category_name": "Prospecting",
+   "description": "AccountSpotter — autonomous prospecting agent. Signal discovery & cohort building.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.17"
+  },
+  {
+   "id": "c1950c99-d3fe-407e-8f21-834aa3ef7f2d",
+   "name": "EnrichmentEngine",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "EnrichmentEngine — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.2.2"
+  },
+  {
+   "id": "0a40bbf5-c3e2-47f4-ad0a-14bdc9e737f1",
+   "name": "ScoreSmith",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "ScoreSmith — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.28"
+  },
+  {
+   "id": "4c0b8b37-07ef-47ee-a882-a91030ac4c80",
+   "name": "ICPValidator",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "ICPValidator — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.7.0"
+  },
+  {
+   "id": "17f9c728-2226-4baf-96bb-369f30c2f9ff",
+   "name": "BudgetProfiler",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "BudgetProfiler — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.5.15"
+  },
+  {
+   "id": "c521d63f-1b5e-4e57-97fb-b76d719d3c20",
+   "name": "AuthorityChecker",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "AuthorityChecker — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.12"
+  },
+  {
+   "id": "e6bf75c8-531e-4fb9-be00-5b55a34512a3",
+   "name": "NeedMapper",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "NeedMapper — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.21"
+  },
+  {
+   "id": "6f911793-b2cb-4689-8950-6e3338960fc8",
+   "name": "TimingOracle",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "TimingOracle — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.12"
+  },
+  {
+   "id": "0b345f76-0759-4e4c-8f4a-49124f8c3343",
+   "name": "FraudScanner",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "FraudScanner — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.23"
+  },
+  {
+   "id": "c50d89d1-3edd-465f-bbf7-11d906899a07",
+   "name": "DuplicateDetector",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "DuplicateDetector — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.15"
+  },
+  {
+   "id": "59a3e01f-02df-4040-bbb1-709d080e6e33",
+   "name": "ICPRefiner",
+   "category": "qualification",
+   "category_name": "Qualification",
+   "description": "ICPRefiner — autonomous qualification agent. Lead enrichment & scoring.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.3.0"
+  },
+  {
+   "id": "1dd7068b-5d8a-4858-bf46-62495aeadd46",
+   "name": "EmailMaestro",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "EmailMaestro — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.13"
+  },
+  {
+   "id": "824877ef-e065-4bb5-b4d0-90d5198dbdf1",
+   "name": "VoiceConcierge",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "VoiceConcierge — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.16"
+  },
+  {
+   "id": "29e42952-8780-4a95-8ac6-7ab8d5792de7",
+   "name": "SMSPulse",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "SMSPulse — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.2.11"
+  },
+  {
+   "id": "0e359a69-5434-4e93-9aea-e9e10b2a0e27",
+   "name": "WhatsAppCadence",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "WhatsAppCadence — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.7"
+  },
+  {
+   "id": "d4063831-7051-44b5-80fb-c2fe2d074e11",
+   "name": "LinkedInWeaver",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "LinkedInWeaver — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.17"
+  },
+  {
+   "id": "fc7e42a9-0a9b-4c66-984c-fbc55d5853af",
+   "name": "AdRetargeter",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "AdRetargeter — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.9"
+  },
+  {
+   "id": "6c95fba7-4482-4236-974d-ead4db48fb1a",
+   "name": "ChatGreeter",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "ChatGreeter — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.19"
+  },
+  {
+   "id": "57d59519-2149-4595-9128-5ee27725e2d3",
+   "name": "FollowupScheduler",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "FollowupScheduler — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.1.4"
+  },
+  {
+   "id": "7dfde1bf-44f3-488a-b9d3-d9b857a0204c",
+   "name": "ContentTailor",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "ContentTailor — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.5.14"
+  },
+  {
+   "id": "0a6f155b-9e9f-440e-8f92-b136dba1392c",
+   "name": "ChannelOrchestrator",
+   "category": "engagement",
+   "category_name": "Engagement",
+   "description": "ChannelOrchestrator — autonomous engagement agent. Multi-channel outreach orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.7.4"
+  },
+  {
+   "id": "1ee1e36f-0791-46be-b8ad-6a8743fecff9",
+   "name": "LoginShepherd",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "LoginShepherd — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.2.14"
+  },
+  {
+   "id": "143f6707-fedc-4564-8c2d-d57a3a235f1f",
+   "name": "FormOptimizer",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "FormOptimizer — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.23"
+  },
+  {
+   "id": "7c7948b2-8208-4905-8c2c-775dc2aa9023",
+   "name": "OTPGuardian",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "OTPGuardian — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.2.6"
+  },
+  {
+   "id": "c3f5da09-c207-4064-9134-c01571f16042",
+   "name": "DropoffRescuer",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "DropoffRescuer — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.4.18"
+  },
+  {
+   "id": "e5bf097a-d954-4df7-836e-1f0d424131e2",
+   "name": "CrossSellAdvisor",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "CrossSellAdvisor — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.9.17"
+  },
+  {
+   "id": "2defe8d9-c6ab-4f71-b2b4-d21eb53a7a62",
+   "name": "FunnelArchitect",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "FunnelArchitect — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.9.22"
+  },
+  {
+   "id": "927d7b39-0a3b-452f-aa58-f29a5c1a4247",
+   "name": "TrustBuilder",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "TrustBuilder — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.14"
+  },
+  {
+   "id": "eccc5b2a-8c5a-4107-b585-b4728155a91a",
+   "name": "ConsentNotary",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "ConsentNotary — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.9.16"
+  },
+  {
+   "id": "336f2884-2dea-40e5-9631-31bebddccf34",
+   "name": "OfferTuner",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "OfferTuner — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.4.23"
+  },
+  {
+   "id": "b810eb8a-db0e-4f56-a718-66db29479814",
+   "name": "CartReviver",
+   "category": "conversion",
+   "category_name": "Conversion",
+   "description": "CartReviver — autonomous conversion agent. Login & funnel optimization.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.2.11"
+  },
+  {
+   "id": "4e8d7c8a-0cf2-40a0-9339-e3783b6e3ffd",
+   "name": "LenderMatcher",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "LenderMatcher — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.7.9"
+  },
+  {
+   "id": "c0ff63bf-da0f-4a3e-acf8-b843a18ccbd9",
+   "name": "RateAuctioneer",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "RateAuctioneer — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.6.25"
+  },
+  {
+   "id": "0730e45f-b3db-473d-84e5-ac5ea6939a30",
+   "name": "EligibilityNavigator",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "EligibilityNavigator — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.1.25"
+  },
+  {
+   "id": "80c9af8d-8935-4d46-b0c8-3e165eea6d7a",
+   "name": "PlanCurator",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "PlanCurator — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.2.8"
+  },
+  {
+   "id": "fe937a51-7595-476b-9864-d3537e1db5ae",
+   "name": "ProductOptimizer",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "ProductOptimizer — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.19"
+  },
+  {
+   "id": "bccce4ad-a34f-4015-973b-983184b9b795",
+   "name": "ComplianceMapper",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "ComplianceMapper — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.5.2"
+  },
+  {
+   "id": "26752071-8f1e-486f-8a9a-9a4954c20abc",
+   "name": "DocumentMatcher",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "DocumentMatcher — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.14"
+  },
+  {
+   "id": "a1b8aaf9-c9db-4dcb-898c-be6c4262e743",
+   "name": "RegionFitter",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "RegionFitter — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.0.13"
+  },
+  {
+   "id": "bdf99972-1ac1-469d-ace6-37170b0cfc00",
+   "name": "RiskAligner",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "RiskAligner — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.0"
+  },
+  {
+   "id": "7ea25308-f747-4ca4-81eb-dddbf9908745",
+   "name": "PolicyMatcher",
+   "category": "matching",
+   "category_name": "Matching",
+   "description": "PolicyMatcher — autonomous matching agent. Lender & product matching.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.8.27"
+  },
+  {
+   "id": "9de9edac-87c5-4183-88b9-8ee980dd5fb2",
+   "name": "UnderwritingPilot",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "UnderwritingPilot — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.2.25"
+  },
+  {
+   "id": "0e5780d2-5908-47c0-b548-9c4423cdcc65",
+   "name": "KYCNavigator",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "KYCNavigator — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.9.15"
+  },
+  {
+   "id": "f62a1fe6-7734-4bcd-ab19-436e5f896425",
+   "name": "AMLSentinel",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "AMLSentinel — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.7.10"
+  },
+  {
+   "id": "c9743906-7e8b-4cd3-a1f2-e09110a6f7db",
+   "name": "DisbursementOrchestrator",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "DisbursementOrchestrator — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.1.8"
+  },
+  {
+   "id": "8fe68c92-d668-4e00-941e-04ec89c65faa",
+   "name": "ApprovalRouter",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "ApprovalRouter — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.4.24"
+  },
+  {
+   "id": "5515d61b-b030-402d-a2e1-8036369ba94c",
+   "name": "ContractDrafter",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "ContractDrafter — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.4.11"
+  },
+  {
+   "id": "04991be0-09e6-44f7-bfc3-d6df85afc9cb",
+   "name": "EsignFacilitator",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "EsignFacilitator — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.1.21"
+  },
+  {
+   "id": "c869716a-7255-48b2-bc81-df4cdeafaf15",
+   "name": "CollateralAnalyzer",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "CollateralAnalyzer — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.7.16"
+  },
+  {
+   "id": "9a2e6fd6-5c4c-49a1-90e8-cc8892279b5a",
+   "name": "BureauReader",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "BureauReader — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.24"
+  },
+  {
+   "id": "d6f190ef-070a-4cbf-a389-baec1febb00d",
+   "name": "FundsRelayer",
+   "category": "funding",
+   "category_name": "Funding",
+   "description": "FundsRelayer — autonomous funding agent. Underwriting & approval orchestration.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.23"
+  },
+  {
+   "id": "c692de99-f3a4-4939-8f0a-f49894f07cc1",
+   "name": "FeedbackLoopMiner",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "FeedbackLoopMiner — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.9.12"
+  },
+  {
+   "id": "a40b4866-f125-4c46-a017-a0b0a2942ceb",
+   "name": "ModelTuner",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "ModelTuner — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.2.7"
+  },
+  {
+   "id": "c2f362ca-7ad0-48d0-af3a-c28edc9f2bcf",
+   "name": "ChampionChallenger",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "ChampionChallenger — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.5.20"
+  },
+  {
+   "id": "4b3e3117-f529-432f-b373-2797c30417a1",
+   "name": "DriftDetector",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "DriftDetector — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.9.14"
+  },
+  {
+   "id": "a76e99dc-295c-4562-99dd-e44b3b13ece2",
+   "name": "AnomalyHunter",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "AnomalyHunter — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "idle",
+   "version": "2.8.3"
+  },
+  {
+   "id": "0d0e407a-3754-4b37-af45-2649eb627d8f",
+   "name": "CounterfactualAnalyst",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "CounterfactualAnalyst — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.9"
+  },
+  {
+   "id": "16a02906-7e64-4bf5-aee3-f7fe9b7ab808",
+   "name": "AttributionWeaver",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "AttributionWeaver — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.0.3"
+  },
+  {
+   "id": "77b0c15b-da79-4074-b82d-115170ca3a94",
+   "name": "RetrainScheduler",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "RetrainScheduler — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.4.21"
+  },
+  {
+   "id": "dcc7843d-52d8-4e7b-ab52-bbe0cb324eeb",
+   "name": "PolicyEvaluator",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "PolicyEvaluator — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.1.21"
+  },
+  {
+   "id": "7fcc3269-29e9-4e03-92b0-dcae92d7fbc9",
+   "name": "TelemetrySynth",
+   "category": "learning",
+   "category_name": "Learning",
+   "description": "TelemetrySynth — autonomous learning agent. Closed-loop optimization & retraining.",
+   "capabilities": [
+    "Continuous learning",
+    "Multi-channel coordination",
+    "Closed-loop feedback"
+   ],
+   "status": "active",
+   "version": "2.3.15"
+  }
+ ],
+ "integrations": [
+  {
+   "id": "deabb6c2-4fb1-47db-8875-2f91c530c6a7",
+   "name": "Salesforce",
+   "category": "CRM",
+   "icon": "SiSalesforce",
+   "description": "Bi-directional lead sync with Salesforce Sales Cloud."
+  },
+  {
+   "id": "048b8df9-81ac-4882-8648-94f1cbb6bac2",
+   "name": "HubSpot",
+   "category": "CRM",
+   "icon": "SiHubspot",
+   "description": "Contact, deal, and pipeline sync with HubSpot."
+  },
+  {
+   "id": "2abaea73-c39b-47c2-b749-e3931352952c",
+   "name": "Twilio",
+   "category": "Communications",
+   "icon": "SiTwilio",
+   "description": "Programmable SMS, voice, and OTP delivery."
+  },
+  {
+   "id": "f157a75e-84b6-4069-a864-a224c907e371",
+   "name": "WhatsApp",
+   "category": "Communications",
+   "icon": "SiWhatsapp",
+   "description": "Conversational engagement via WhatsApp Business API."
+  },
+  {
+   "id": "0cb04f6e-092e-451a-91a5-375e2e538a60",
+   "name": "SendGrid",
+   "category": "Communications",
+   "icon": "SiSendgrid",
+   "description": "Transactional email & deliverability."
+  },
+  {
+   "id": "39d1dd1d-4983-4ad1-b20d-6495e5326c06",
+   "name": "Apollo",
+   "category": "Data Enrichment",
+   "icon": "SiApollographql",
+   "description": "Contact & company enrichment."
+  },
+  {
+   "id": "4bdde295-5842-47d1-b265-5d526e27ca9a",
+   "name": "Clearbit",
+   "category": "Data Enrichment",
+   "icon": "SiBuffer",
+   "description": "Real-time firmographic enrichment."
+  },
+  {
+   "id": "4e3186c8-f22c-4a16-9c5c-87e2444ab6fe",
+   "name": "People Data Labs",
+   "category": "Data Enrichment",
+   "icon": "SiDatabricks",
+   "description": "Person & company graph data."
+  },
+  {
+   "id": "45c5685f-63a8-4b3c-8f97-0fb9c26c57ea",
+   "name": "Onfido",
+   "category": "Identity / KYC",
+   "icon": "SiOkta",
+   "description": "Document & biometric identity verification."
+  },
+  {
+   "id": "0bf059ef-9e4b-4536-a6ba-dadd7050e742",
+   "name": "HyperVerge",
+   "category": "Identity / KYC",
+   "icon": "SiVerizon",
+   "description": "Face match & document KYC."
+  },
+  {
+   "id": "dc1662a4-ae9a-4fea-8bc1-5a08a43554fe",
+   "name": "Aadhaar APIs",
+   "category": "Identity / KYC",
+   "icon": "SiAuthelia",
+   "description": "India identity verification."
+  },
+  {
+   "id": "ee71027b-1c36-4089-898c-76a96f5b89c0",
+   "name": "LOS / LMS",
+   "category": "Financial Systems",
+   "icon": "SiOpensea",
+   "description": "Loan origination & management connectors."
+  },
+  {
+   "id": "f0738092-f6ba-4ec8-8ee5-736b892bc641",
+   "name": "Lender APIs",
+   "category": "Financial Systems",
+   "icon": "SiVisa",
+   "description": "Direct integrations with 40+ lenders."
+  },
+  {
+   "id": "ec840a33-4e18-4e39-9bbc-0a4dec7c49dd",
+   "name": "Epic / FHIR",
+   "category": "Medical Systems",
+   "icon": "SiHl7",
+   "description": "HL7 FHIR-compatible EHR connectors."
+  },
+  {
+   "id": "d673e298-f4ee-4169-b895-0dc42d6c9529",
+   "name": "OpenAI",
+   "category": "AI Services",
+   "icon": "SiOpenai",
+   "description": "GPT-5.2, embeddings, and responses API."
+  },
+  {
+   "id": "27631091-0e4a-40c3-a3ef-35f65eb382ef",
+   "name": "LangGraph",
+   "category": "Orchestration",
+   "icon": "SiLangchain",
+   "description": "Stateful, multi-agent orchestration graphs."
+  },
+  {
+   "id": "ff4bf4b3-190b-43bd-b3ac-0e6d2d52e748",
+   "name": "n8n",
+   "category": "Orchestration",
+   "icon": "SiN8N",
+   "description": "Workflow automation glue."
+  },
+  {
+   "id": "5be492c0-a6e4-47b1-aa95-623ec6715589",
+   "name": "Pinecone",
+   "category": "Memory / Vector",
+   "icon": "SiPinecone",
+   "description": "Vector memory for agents."
+  },
+  {
+   "id": "8a264907-e042-4a26-8904-3c151ba0e07f",
+   "name": "Snowflake",
+   "category": "Analytics",
+   "icon": "SiSnowflake",
+   "description": "Data warehouse for revenue analytics."
+  },
+  {
+   "id": "71b8a3c0-90ab-4aa9-8888-19713a439829",
+   "name": "Segment",
+   "category": "Analytics",
+   "icon": "SiSegment",
+   "description": "Customer data pipeline."
+  }
+ ],
+ "journeys": [
+  {
+   "id": "0463eccf-e6f9-4e8d-b5d6-19fb342024d0",
+   "name": "Mortgage Pre-Approval Cadence",
+   "industry": "mortgages",
+   "active_leads": 412,
+   "conversion_rate": 0.31,
+   "nodes": [
+    {
+     "id": "n1",
+     "type": "trigger",
+     "label": "Inbound mortgage signal",
+     "agent": "SignalHunter"
+    },
+    {
+     "id": "n2",
+     "type": "action",
+     "label": "Enrich + score",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "id": "n3",
+     "type": "decision",
+     "label": "Score ≥ 70?"
+    },
+    {
+     "id": "n4",
+     "type": "action",
+     "label": "WhatsApp + Email cadence",
+     "agent": "ChannelOrchestrator"
+    },
+    {
+     "id": "n5",
+     "type": "action",
+     "label": "Match lender",
+     "agent": "LenderMatcher"
+    },
+    {
+     "id": "n6",
+     "type": "outcome",
+     "label": "Pre-approved"
+    }
+   ]
+  },
+  {
+   "id": "f8a91c7b-cb1e-4ca7-900e-64576768d126",
+   "name": "Card Activation Recovery",
+   "industry": "cards",
+   "active_leads": 1284,
+   "conversion_rate": 0.42,
+   "nodes": [
+    {
+     "id": "n1",
+     "type": "trigger",
+     "label": "Card issued, not activated 72h",
+     "agent": "DropoffRescuer"
+    },
+    {
+     "id": "n2",
+     "type": "action",
+     "label": "Personalized SMS nudge",
+     "agent": "SMSPulse"
+    },
+    {
+     "id": "n3",
+     "type": "decision",
+     "label": "Engaged?"
+    },
+    {
+     "id": "n4",
+     "type": "action",
+     "label": "Voice callback",
+     "agent": "VoiceConcierge"
+    },
+    {
+     "id": "n5",
+     "type": "outcome",
+     "label": "Activated"
+    }
+   ]
+  },
+  {
+   "id": "f50f2a2b-90d5-4f79-8120-ab5592f6ce06",
+   "name": "Insurance Quote-to-Bind",
+   "industry": "insurance",
+   "active_leads": 698,
+   "conversion_rate": 0.29,
+   "nodes": [
+    {
+     "id": "n1",
+     "type": "trigger",
+     "label": "Quote requested",
+     "agent": "SignalHunter"
+    },
+    {
+     "id": "n2",
+     "type": "action",
+     "label": "Auto-quote 6 carriers",
+     "agent": "RateAuctioneer"
+    },
+    {
+     "id": "n3",
+     "type": "action",
+     "label": "Conversational bind via WhatsApp",
+     "agent": "WhatsAppCadence"
+    },
+    {
+     "id": "n4",
+     "type": "outcome",
+     "label": "Policy bound"
+    }
+   ]
+  }
+ ],
+ "industries": {
+  "financial": {
+   "id": "d91efbd2-8838-48b6-b11b-ee10a8b20b77",
+   "slug": "financial",
+   "name": "Financial Services",
+   "tagline": "Origination, onboarding, and cross-sell — fully orchestrated.",
+   "pain_points": [
+    "Long origination cycles",
+    "Drop-off at KYC",
+    "Manual underwriting"
+   ],
+   "outcomes": [
+    "38% faster origination",
+    "2.1x login conversion",
+    "21% reduction in CAC"
+   ],
+   "journey_steps": [
+    "Signal",
+    "Enrich",
+    "Engage",
+    "Login",
+    "KYC",
+    "Approve",
+    "Fund"
+   ]
+  },
+  "medical": {
+   "id": "4b8bafda-d764-49d9-9ddf-67f6181204df",
+   "slug": "medical",
+   "name": "Medical & Healthcare",
+   "tagline": "Patient acquisition and pre-auth without the friction.",
+   "pain_points": [
+    "Fragmented intake",
+    "Eligibility delays",
+    "No-shows"
+   ],
+   "outcomes": [
+    "44% intake completion lift",
+    "3.2x faster eligibility",
+    "27% fewer no-shows"
+   ],
+   "journey_steps": [
+    "Signal",
+    "Triage",
+    "Engage",
+    "Intake",
+    "Eligibility",
+    "Schedule",
+    "Retain"
+   ]
+  },
+  "insurance": {
+   "id": "e15d0090-599b-4614-b53f-26ab934a8c4f",
+   "slug": "insurance",
+   "name": "Insurance",
+   "tagline": "Quote-to-bind compressed into a single conversation.",
+   "pain_points": [
+    "Quote abandonment",
+    "Cross-sell misses",
+    "Slow renewals"
+   ],
+   "outcomes": [
+    "29% bind rate uplift",
+    "1.8x cross-sell",
+    "33% faster renewals"
+   ],
+   "journey_steps": [
+    "Signal",
+    "Quote",
+    "Engage",
+    "Bind",
+    "Issue",
+    "Cross-sell",
+    "Renew"
+   ]
+  },
+  "mortgages": {
+   "id": "88124d32-c0d5-4670-8497-a286bd77bd18",
+   "slug": "mortgages",
+   "name": "Mortgages",
+   "tagline": "From signal to close — every applicant nurtured by an AI co-pilot.",
+   "pain_points": [
+    "Long approval timelines",
+    "Document collection drag",
+    "Rate-shopping leakage"
+   ],
+   "outcomes": [
+    "41% faster pre-approval",
+    "2.4x document completeness",
+    "18% fewer drop-offs"
+   ],
+   "journey_steps": [
+    "Signal",
+    "Pre-qual",
+    "Engage",
+    "Apply",
+    "Underwrite",
+    "Lock",
+    "Close"
+   ]
+  },
+  "cards": {
+   "id": "1170be9d-6cd6-4e71-90b3-f28409bcadbf",
+   "slug": "cards",
+   "name": "Credit Cards",
+   "tagline": "Approval-ready applicants, every time.",
+   "pain_points": [
+    "Low instant-approval rates",
+    "Activation drop-off",
+    "Limited cross-sell"
+   ],
+   "outcomes": [
+    "52% instant approval",
+    "37% activation uplift",
+    "2.0x card-to-loan cross-sell"
+   ],
+   "journey_steps": [
+    "Signal",
+    "Profile",
+    "Engage",
+    "Apply",
+    "Approve",
+    "Activate",
+    "Cross-sell"
+   ]
+  },
+  "lending": {
+   "id": "f26407d2-b3f8-4e51-b6a0-4f176f4bb6e8",
+   "slug": "lending",
+   "name": "Lending",
+   "tagline": "Autonomous origination for personal, SMB, and BNPL.",
+   "pain_points": [
+    "High CAC",
+    "Manual matching",
+    "Compliance overhead"
+   ],
+   "outcomes": [
+    "31% CAC reduction",
+    "4.6x lender match accuracy",
+    "100% audit-ready"
+   ],
+   "journey_steps": [
+    "Signal",
+    "Pre-qual",
+    "Match",
+    "Apply",
+    "Underwrite",
+    "Disburse",
+    "Service"
+   ]
+  }
+ },
+ "alerts": [
+  {
+   "id": "bc4c4fdd-d0d7-4689-aad6-a7182e58fa20",
+   "severity": "info",
+   "title": "Daily orchestration report ready"
+  },
+  {
+   "id": "450e2a91-ae76-4ed9-b843-47c2af3596cc",
+   "severity": "warning",
+   "title": "WhatsApp template needs re-approval"
+  },
+  {
+   "id": "efb6647b-6a08-4f74-b526-0bf672f74cf5",
+   "severity": "success",
+   "title": "DriftDetector caught conversion model drift, auto-retrained"
+  },
+  {
+   "id": "1bbc96cb-e602-4c57-b4d0-98efb69d5ddc",
+   "severity": "info",
+   "title": "12 new lenders added to LenderMatcher"
+  }
+ ],
+ "leads": [
+  {
+   "id": "ef377a92-8900-466a-92f0-2f68bd348b25",
+   "name": "Maya Reed",
+   "email": "lead8@orbitcards.com",
+   "phone": "+1 555-0130",
+   "company": "Ridge Loans",
+   "industry": "insurance",
+   "source": "LinkedIn",
+   "status": "engaged",
+   "score": 92,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "EmailMaestro",
+   "created_at": "2026-05-18T13:53:16.670053+00:00",
+   "last_activity": "2026-05-16T01:53:16.670056+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670059+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670061+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670062+00:00",
+     "event": "Scored: 92",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670065+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "744796a9-4ef5-47c7-b524-6e5bba62ce11",
+   "name": "Kai Mendes",
+   "email": "lead26@northwindlending.com",
+   "phone": "+1 555-0670",
+   "company": "Orbit Cards",
+   "industry": "financial",
+   "source": "Apollo",
+   "status": "converted",
+   "score": 47,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-05-18T01:53:16.670388+00:00",
+   "last_activity": "2026-05-18T11:53:16.670391+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670393+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670394+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670396+00:00",
+     "event": "Scored: 47",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670398+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "6dc7695e-2532-4fb4-902a-c42ec6489afa",
+   "name": "Hannah Brown",
+   "email": "lead3@aegiscapital.com",
+   "phone": "+1 555-0662",
+   "company": "Atlas Underwriters",
+   "industry": "lending",
+   "source": "Partner API",
+   "status": "nurturing",
+   "score": 43,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "EmailMaestro",
+   "created_at": "2026-05-17T17:53:16.669943+00:00",
+   "last_activity": "2026-05-16T15:53:16.669946+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.669948+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.669950+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.669952+00:00",
+     "event": "Scored: 43",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.669953+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "875a7cb1-35f6-40a8-982f-1629f34abc4d",
+   "name": "Hannah Park",
+   "email": "lead23@lumenfinance.com",
+   "phone": "+1 555-0561",
+   "company": "Polaris Medical",
+   "industry": "cards",
+   "source": "Referral",
+   "status": "qualified",
+   "score": 74,
+   "score_tier": "warm",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-05-17T15:53:16.670336+00:00",
+   "last_activity": "2026-05-17T09:53:16.670339+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670341+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670342+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670344+00:00",
+     "event": "Scored: 74",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670345+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "a9d1ec22-0094-4ef3-8bae-1cc91694c607",
+   "name": "Ethan Garcia",
+   "email": "lead11@lumenfinance.com",
+   "phone": "+1 555-0535",
+   "company": "Orbit Cards",
+   "industry": "financial",
+   "source": "Inbound Form",
+   "status": "engaged",
+   "score": 58,
+   "score_tier": "warm",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-05-17T14:53:16.670113+00:00",
+   "last_activity": "2026-05-18T04:53:16.670116+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670118+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670120+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670121+00:00",
+     "event": "Scored: 58",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670124+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "ec7faa56-2921-43fc-b033-a3ae1e071b3d",
+   "name": "Liam Reed",
+   "email": "lead17@ridgeloans.com",
+   "phone": "+1 555-0689",
+   "company": "Orbit Cards",
+   "industry": "financial",
+   "source": "Apollo",
+   "status": "new",
+   "score": 83,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-05-13T17:53:16.670230+00:00",
+   "last_activity": "2026-05-17T00:53:16.670232+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670234+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670236+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670237+00:00",
+     "event": "Scored: 83",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670240+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "de89d279-8a55-4f7d-b59e-1fd5964e913a",
+   "name": "Zoe Cohen",
+   "email": "lead7@polarismedical.com",
+   "phone": "+1 555-0300",
+   "company": "Atlas Underwriters",
+   "industry": "medical",
+   "source": "Referral",
+   "status": "converted",
+   "score": 72,
+   "score_tier": "warm",
+   "score_reasoning": null,
+   "assigned_agent": "LoginShepherd",
+   "created_at": "2026-05-08T20:53:16.670033+00:00",
+   "last_activity": "2026-05-15T20:53:16.670036+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670039+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670041+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670042+00:00",
+     "event": "Scored: 72",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670044+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "ba286c7a-f62c-485b-a66f-a49c5fa9859a",
+   "name": "Chloe Mehta",
+   "email": "lead1@lumenfinance.com",
+   "phone": "+1 555-0521",
+   "company": "Ridge Loans",
+   "industry": "mortgages",
+   "source": "Referral",
+   "status": "qualified",
+   "score": 79,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "LoginShepherd",
+   "created_at": "2026-05-07T06:53:16.669902+00:00",
+   "last_activity": "2026-05-17T17:53:16.669906+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.669908+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.669910+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.669912+00:00",
+     "event": "Scored: 79",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.669914+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "3d4677ea-78e9-47cc-b30b-097a4a42b29e",
+   "name": "Rohan Levy",
+   "email": "lead24@cedarmortgage.com",
+   "phone": "+1 555-0279",
+   "company": "Aegis Capital",
+   "industry": "lending",
+   "source": "LinkedIn",
+   "status": "new",
+   "score": 80,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-05-06T10:53:16.670354+00:00",
+   "last_activity": "2026-05-16T18:53:16.670356+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670358+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670360+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670361+00:00",
+     "event": "Scored: 80",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670363+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "0fc385cd-85ce-42bd-abeb-339f85e81154",
+   "name": "Hannah Mehta",
+   "email": "lead14@polarismedical.com",
+   "phone": "+1 555-0438",
+   "company": "Aegis Capital",
+   "industry": "medical",
+   "source": "LinkedIn",
+   "status": "converted",
+   "score": 40,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "EmailMaestro",
+   "created_at": "2026-05-06T05:53:16.670167+00:00",
+   "last_activity": "2026-05-16T12:53:16.670170+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670172+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670174+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670176+00:00",
+     "event": "Scored: 40",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670177+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "2987cd81-002d-4773-af5b-4b6bbb48de6f",
+   "name": "Ethan Adams",
+   "email": "lead16@orbitcards.com",
+   "phone": "+1 555-0195",
+   "company": "Beacon Insurance",
+   "industry": "lending",
+   "source": "Apollo",
+   "status": "engaged",
+   "score": 29,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "LoginShepherd",
+   "created_at": "2026-05-04T22:53:16.670212+00:00",
+   "last_activity": "2026-05-17T14:53:16.670215+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670217+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670219+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670220+00:00",
+     "event": "Scored: 29",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670222+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "44d9ab31-00d5-41d8-bd05-3ec020275761",
+   "name": "Mateo Levy",
+   "email": "lead25@cedarmortgage.com",
+   "phone": "+1 555-0927",
+   "company": "Polaris Medical",
+   "industry": "medical",
+   "source": "Webinar",
+   "status": "qualified",
+   "score": 45,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "LoginShepherd",
+   "created_at": "2026-05-04T13:53:16.670370+00:00",
+   "last_activity": "2026-05-18T14:53:16.670373+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670375+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670376+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670378+00:00",
+     "event": "Scored: 45",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670379+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "70bdece7-4674-4f21-ab03-62014a691c5f",
+   "name": "Hannah Mendes",
+   "email": "lead6@lumenfinance.com",
+   "phone": "+1 555-0485",
+   "company": "Ridge Loans",
+   "industry": "mortgages",
+   "source": "LinkedIn",
+   "status": "qualified",
+   "score": 90,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-05-02T19:53:16.670010+00:00",
+   "last_activity": "2026-05-16T03:53:16.670013+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670015+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670017+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670019+00:00",
+     "event": "Scored: 90",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670021+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "be51cbda-6ee5-4c35-9ca5-8be86947b541",
+   "name": "Zoe Nguyen",
+   "email": "lead20@beaconinsurance.com",
+   "phone": "+1 555-0666",
+   "company": "Northwind Lending",
+   "industry": "cards",
+   "source": "Inbound Form",
+   "status": "engaged",
+   "score": 90,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-05-02T15:53:16.670284+00:00",
+   "last_activity": "2026-05-16T16:53:16.670287+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670289+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670291+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670294+00:00",
+     "event": "Scored: 90",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670296+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "fd27da64-ca93-4c9b-8213-dd562c6b8c5e",
+   "name": "Chloe Reed",
+   "email": "lead18@polarismedical.com",
+   "phone": "+1 555-0863",
+   "company": "Helix Health",
+   "industry": "financial",
+   "source": "Apollo",
+   "status": "engaged",
+   "score": 30,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "EmailMaestro",
+   "created_at": "2026-05-01T04:53:16.670248+00:00",
+   "last_activity": "2026-05-18T05:53:16.670250+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670253+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670254+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670256+00:00",
+     "event": "Scored: 30",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670258+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "8f3b1c06-30cd-4a73-9bb3-ccc7fc219b19",
+   "name": "Priya Adams",
+   "email": "lead9@northwindlending.com",
+   "phone": "+1 555-0158",
+   "company": "Orbit Cards",
+   "industry": "insurance",
+   "source": "Inbound Form",
+   "status": "converted",
+   "score": 30,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "EmailMaestro",
+   "created_at": "2026-04-29T06:53:16.670073+00:00",
+   "last_activity": "2026-05-18T03:53:16.670076+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670079+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670080+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670082+00:00",
+     "event": "Scored: 30",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670084+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "c447f505-c6d0-479c-8f7a-b4ad369d0b19",
+   "name": "Hannah Holm",
+   "email": "lead4@polarismedical.com",
+   "phone": "+1 555-0888",
+   "company": "Ridge Loans",
+   "industry": "cards",
+   "source": "Webinar",
+   "status": "converted",
+   "score": 71,
+   "score_tier": "warm",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-04-27T23:53:16.669962+00:00",
+   "last_activity": "2026-05-17T08:53:16.669965+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.669967+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.669969+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.669971+00:00",
+     "event": "Scored: 71",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.669973+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "a2553df2-81d7-4119-bd5e-308061800c6d",
+   "name": "Liam Holm",
+   "email": "lead21@polarismedical.com",
+   "phone": "+1 555-0222",
+   "company": "Cedar Mortgage",
+   "industry": "medical",
+   "source": "Inbound Form",
+   "status": "converted",
+   "score": 43,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-04-26T15:53:16.670303+00:00",
+   "last_activity": "2026-05-18T01:53:16.670306+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670308+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670309+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670311+00:00",
+     "event": "Scored: 43",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670313+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "05af18d6-1fcc-43f3-896f-6dc13a6370ed",
+   "name": "Hannah Rossi",
+   "email": "lead0@northwindlending.com",
+   "phone": "+1 555-0521",
+   "company": "Polaris Medical",
+   "industry": "lending",
+   "source": "Referral",
+   "status": "new",
+   "score": 95,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "LoginShepherd",
+   "created_at": "2026-04-26T10:53:16.669862+00:00",
+   "last_activity": "2026-05-17T16:53:16.669878+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.669882+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.669885+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.669887+00:00",
+     "event": "Scored: 95",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.669889+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "35956ab2-1260-4708-8e3d-ba2d2d8e04b5",
+   "name": "Owen Garcia",
+   "email": "lead27@polarismedical.com",
+   "phone": "+1 555-0464",
+   "company": "Cedar Mortgage",
+   "industry": "lending",
+   "source": "Referral",
+   "status": "nurturing",
+   "score": 48,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "EmailMaestro",
+   "created_at": "2026-04-25T22:53:16.670405+00:00",
+   "last_activity": "2026-05-16T14:53:16.670408+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670410+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670412+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670413+00:00",
+     "event": "Scored: 48",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670415+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "88427dc9-5aa5-4c27-a3d6-ac4c98ac3b28",
+   "name": "Aisha Mehta",
+   "email": "lead2@orbitcards.com",
+   "phone": "+1 555-0590",
+   "company": "Ridge Loans",
+   "industry": "financial",
+   "source": "Webinar",
+   "status": "engaged",
+   "score": 93,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-04-25T07:53:16.669923+00:00",
+   "last_activity": "2026-05-16T02:53:16.669926+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.669929+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.669931+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.669933+00:00",
+     "event": "Scored: 93",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.669934+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "f0ec503e-8d02-4f67-afc7-d75838e97c75",
+   "name": "Kai Hassan",
+   "email": "lead13@lumenfinance.com",
+   "phone": "+1 555-0763",
+   "company": "Lumen Finance",
+   "industry": "mortgages",
+   "source": "Referral",
+   "status": "converted",
+   "score": 44,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-04-24T21:53:16.670150+00:00",
+   "last_activity": "2026-05-17T01:53:16.670153+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670155+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670156+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670158+00:00",
+     "event": "Scored: 44",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670160+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "c51b40e3-edeb-4864-a0aa-16d28c3e3d50",
+   "name": "Liam Nguyen",
+   "email": "lead22@helixhealth.com",
+   "phone": "+1 555-0457",
+   "company": "Lumen Finance",
+   "industry": "lending",
+   "source": "Referral",
+   "status": "qualified",
+   "score": 84,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-04-24T08:53:16.670319+00:00",
+   "last_activity": "2026-05-18T09:53:16.670322+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670324+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670326+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670327+00:00",
+     "event": "Scored: 84",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670329+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "8d597a67-5a93-4d73-a5ce-44f15a0e6684",
+   "name": "Ravi Ortiz",
+   "email": "lead10@lumenfinance.com",
+   "phone": "+1 555-0242",
+   "company": "Cedar Mortgage",
+   "industry": "cards",
+   "source": "Webinar",
+   "status": "qualified",
+   "score": 81,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-04-24T01:53:16.670094+00:00",
+   "last_activity": "2026-05-16T07:53:16.670097+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670099+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670100+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670102+00:00",
+     "event": "Scored: 81",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670104+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "92221ac6-9ded-4485-83b7-08581b1a0428",
+   "name": "Sofia Chen",
+   "email": "lead19@lumenfinance.com",
+   "phone": "+1 555-0856",
+   "company": "Helix Health",
+   "industry": "insurance",
+   "source": "Partner API",
+   "status": "nurturing",
+   "score": 91,
+   "score_tier": "hot",
+   "score_reasoning": null,
+   "assigned_agent": "ScoreSmith",
+   "created_at": "2026-04-22T01:53:16.670265+00:00",
+   "last_activity": "2026-05-17T10:53:16.670268+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670270+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670272+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670273+00:00",
+     "event": "Scored: 91",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670275+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "d5e234ad-3742-4635-974e-50949e419a24",
+   "name": "Maya Park",
+   "email": "lead5@beaconinsurance.com",
+   "phone": "+1 555-0970",
+   "company": "Cedar Mortgage",
+   "industry": "medical",
+   "source": "LinkedIn",
+   "status": "new",
+   "score": 35,
+   "score_tier": "cold",
+   "score_reasoning": null,
+   "assigned_agent": "LoginShepherd",
+   "created_at": "2026-04-21T22:53:16.669981+00:00",
+   "last_activity": "2026-05-15T20:53:16.669984+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.669987+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.669988+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.669990+00:00",
+     "event": "Scored: 35",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670001+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "0d9647d2-d5ce-4308-b7e4-29f6f4f28361",
+   "name": "Owen Rossi",
+   "email": "lead12@aegiscapital.com",
+   "phone": "+1 555-0574",
+   "company": "Ridge Loans",
+   "industry": "mortgages",
+   "source": "Partner API",
+   "status": "engaged",
+   "score": 54,
+   "score_tier": "warm",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-04-19T13:53:16.670133+00:00",
+   "last_activity": "2026-05-15T18:53:16.670136+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670138+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670140+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670141+00:00",
+     "event": "Scored: 54",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670143+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  },
+  {
+   "id": "6d8d255e-3b0a-4de1-a334-36333f887498",
+   "name": "Noah Khan",
+   "email": "lead15@atlasunderwriters.com",
+   "phone": "+1 555-0286",
+   "company": "Lumen Finance",
+   "industry": "cards",
+   "source": "Partner API",
+   "status": "converted",
+   "score": 58,
+   "score_tier": "warm",
+   "score_reasoning": null,
+   "assigned_agent": "LenderMatcher",
+   "created_at": "2026-04-18T19:53:16.670186+00:00",
+   "last_activity": "2026-05-16T04:53:16.670189+00:00",
+   "notes": "Autonomously enriched and scored by the Origin8 Agent Orchestra.",
+   "timeline": [
+    {
+     "ts": "2026-05-15T18:53:16.670191+00:00",
+     "event": "Lead captured",
+     "agent": "SignalHunter"
+    },
+    {
+     "ts": "2026-05-16T18:53:16.670192+00:00",
+     "event": "Enriched via Apollo + Clearbit",
+     "agent": "EnrichmentEngine"
+    },
+    {
+     "ts": "2026-05-17T18:53:16.670202+00:00",
+     "event": "Scored: 58",
+     "agent": "ScoreSmith"
+    },
+    {
+     "ts": "2026-05-18T14:53:16.670204+00:00",
+     "event": "Email cadence started",
+     "agent": "EmailMaestro"
+    }
+   ]
+  }
+ ]
+}
