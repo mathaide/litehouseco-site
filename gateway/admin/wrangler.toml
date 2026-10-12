@@ -24,4 +24,4 @@ crons = ["*/10 * * * *"]
 [vars]
 ADMIN_EMAIL = "malcolm@litehouseco.com"
 ACCESS_TEAM = "plain-mountain-6985.cloudflareaccess.com"
-ACCESS_AUD = "REPLACE_WITH_ACCESS_AUD"
+ACCESS_AUD = ""  # optional: the Access application AUD tag, to pin tokens to this app
