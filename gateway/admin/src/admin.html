@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Litehouse Admin</title>
+<style>
+:root{--navy:#0B1526;--navy2:#13213A;--gold:#C9973F;--goldl:#E0B465;--paper:#FBF9F4;--sand:#F4EFE4;--line:#E6DFD0;--ink:#1F2633;--mut:#5B6474;--ok:#1E8E5A;--bad:#B3261E}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:15px}
+header{background:var(--navy);color:#fff;padding:0 24px}
+.bar{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{font-weight:600;font-size:17px}.brand small{display:block;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--goldl);font-weight:500;margin-top:3px}
+.who{font-size:13px;color:#C5CDDA}
+nav{background:var(--navy2);padding:0 24px}nav .in{max-width:1120px;margin:0 auto;display:flex;gap:4px;overflow-x:auto}
+nav button{background:none;border:0;color:#C5CDDA;font:inherit;font-size:14px;padding:14px 16px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+nav button.on{color:#fff;border-bottom-color:var(--goldl)}
+main{max-width:1120px;margin:0 auto;padding:26px 24px 60px}
+h1{font-size:22px;margin:0 0 4px}.lede{color:var(--mut);margin:0 0 22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:middle;font-size:14px}
+th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;letter-spacing:.2em}
+input[type=text],input[type=password],textarea,select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+input.nc{width:110px;letter-spacing:.2em;font-family:ui-monospace,Menlo,monospace}
+button.b{font:inherit;font-size:14px;padding:8px 14px;border-radius:8px;border:1px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer}
+button.g{background:#fff;color:var(--navy)}button.y{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.muted{color:var(--mut);font-size:13px}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.tile{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;color:var(--ink);text-decoration:none}
+.tile:hover{border-color:var(--gold)}.tile b{display:block;margin-bottom:4px}
+.pill{display:inline-block;font-size:11.5px;padding:3px 9px;border-radius:99px;background:var(--sand)}
+.hide{display:none}.msg{margin-top:10px;font-size:13.5px;min-height:1.2em}
+.sub{display:flex;gap:6px;margin:6px 0 16px;flex-wrap:wrap}.sub button{font:inherit;font-size:13.5px;padding:7px 12px;border:1px solid var(--line);background:#fff;border-radius:99px;cursor:pointer}.sub button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+@media(max-width:700px){th:nth-child(4),td:nth-child(4){display:none}}
+@media(max-width:560px){#t-codes thead{display:none}#codes tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}#codes td{display:block;border:0;padding:4px 0}#codes td:nth-child(4){display:block}}
+.card{overflow-x:auto}
+</style></head><body>
+<header><div class="bar"><div class="brand">Litehouse<small>Admin</small></div><div class="who" id="who"></div></div></header>
+<nav><div class="in" id="tabs">
+<button data-t="codes" class="on">Access codes</button><button data-t="ikigai">Ikigai</button>
+<button data-t="others">Other admins</button><button data-t="health">Site health</button><button data-t="log">Activity</button>
+</div></nav>
+<main>
+<section id="t-codes">
+<h1>Access codes</h1><p class="lede">Each demo site asks visitors for its code. Changing a code takes effect at once and signs everyone out of that site, including you.</p>
+<div class="card"><table><thead><tr><th>Site</th><th>Current code</th><th>New code</th><th>Last changed</th></tr></thead><tbody id="codes"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody></table>
+<div class="msg" id="codesMsg"></div></div>
+<p class="muted">Codes are exactly six digits, any six you choose. A site with no code set stays locked to everyone. DocLens, TwinSim and Ikigai have their own sign-in and are not controlled here.</p>
+</section>
+
+<section id="t-ikigai" class="hide">
+<h1>Ikigai administration</h1><p class="lede">Institutions, data-principal requests and incidents from the Ikigai compliance platform.</p>
+<div class="sub" id="ikSub"><button data-k="institutions" class="on">Institutions</button><button data-k="requests">Data-principal requests</button><button data-k="incidents">Incidents</button><button data-k="retention">Retention</button></div>
+<div class="card" id="ikBody"><p class="muted">Loading…</p></div>
+</section>
+
+<section id="t-others" class="hide">
+<h1>Other admins</h1><p class="lede">Every console that runs part of Litehouse DeepTech, in one place.</p>
+<div class="grid">
+<a class="tile" target="_blank" rel="noopener" href="https://psl.litehouseco.com"><b>Income360</b><span class="muted">Origination to servicing operating system (Railway)</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://origin8.litehouseiq.com"><b>Origin8 Revenue OS</b><span class="muted">Front door and agent orchestra</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://doclens.litehouseiq.com"><b>DocLens</b><span class="muted">Document intelligence (Render)</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://twinsim.litehouseiq.com"><b>TwinSim</b><span class="muted">Digital twin of India</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://agent.litehouseiq.com"><b>Litehouse Agent</b><span class="muted">MSME underwriting agent</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://litehouseiq.com"><b>Ikigai (live product)</b><span class="muted">Compliance, credit and audit OS</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://dash.cloudflare.com"><b>Cloudflare</b><span class="muted">Hosting, domains, Workers, Zero Trust</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://railway.com/dashboard"><b>Railway</b><span class="muted">Income360 servers</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://dashboard.render.com"><b>Render</b><span class="muted">DocLens server</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://admin.google.com"><b>Google Workspace</b><span class="muted">Mailboxes for litehouseco.com</span></a>
+<a class="tile" target="_blank" rel="noopener" href="https://github.com/mathaide"><b>GitHub</b><span class="muted">Source repositories</span></a>
+</div></section>
+
+<section id="t-health" class="hide">
+<h1>Site health</h1><p class="lede">A live check of every address. DocLens is kept awake by a ping every ten minutes.</p>
+<div class="card"><table><thead><tr><th>Site</th><th>Status</th><th>Response</th><th>Address</th></tr></thead><tbody id="health"><tr><td colspan="4" class="muted">Checking…</td></tr></tbody></table>
+<button class="b g" id="recheck" style="margin-top:12px">Check again</button></div>
+</section>
+
+<section id="t-log" class="hide">
+<h1>Activity</h1><p class="lede">Every change made from this panel.</p>
+<div class="card"><table><thead><tr><th>When</th><th>Action</th><th>Detail</th><th>By</th></tr></thead><tbody id="log"></tbody></table></div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s), esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const api=async(p,o)=>{const r=await fetch(p,o);let d={};try{d=await r.json()}catch(e){};return {ok:r.ok,status:r.status,d}};
+const when=t=>t?new Date(t).toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"}):"";
+let loaded={};
+document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#tabs button").forEach(x=>x.classList.toggle("on",x===b));
+ document.querySelectorAll("main>section").forEach(s=>s.classList.add("hide"));$("#t-"+b.dataset.t).classList.remove("hide");load(b.dataset.t)});
+async function load(t){ if(t==="codes")return codes(); if(t==="health")return health(); if(t==="log")return log(); if(t==="ikigai"&&!loaded.ikigai){loaded.ikigai=1;return ik("institutions")} }
+
+async function codes(){
+ const {d}=await api("/api/codes");
+ $("#codes").innerHTML=(d.sites||[]).map(s=>`<tr><td><b>${esc(s.label)}</b><br><a class="muted" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url.replace("https://",""))}</a></td>
+ <td>${s.code?`<span class="code" data-c="${esc(s.code)}">••••••</span> <button class="b g" onclick="const e=this.previousElementSibling;e.textContent=e.textContent.startsWith('•')?e.dataset.c:'••••••'">Show</button>`:'<span class="bad">Not set, site locked</span>'}</td>
+ <td><input class="nc" type="password" inputmode="numeric" maxlength="6" placeholder="6 digits" id="n-${esc(s.site)}"> <button class="b y" onclick="save('${esc(s.site)}')">Save</button></td>
+ <td class="muted">${s.changed?when(s.changed.at):"Default"}</td></tr>`).join("");
+}
+async function save(site){
+ const v=$("#n-"+site).value.trim(); const m=$("#codesMsg");
+ if(!/^[0-9]{6}$/.test(v)){m.innerHTML='<span class="bad">The code must be exactly six digits.</span>';return}
+ if(!confirm("Change the access code for "+site+"? Everyone signed in to that site will be signed out."))return;
+ const r=await api("/api/codes",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({site,code:v})});
+ m.innerHTML=r.ok?'<span class="ok">Saved. The new code is live.</span>':'<span class="bad">'+esc(r.d.error||"Could not save.")+'</span>'; codes();
+}
+async function health(){
+ $("#health").innerHTML='<tr><td colspan="4" class="muted">Checking…</td></tr>';
+ const {d}=await api("/api/health");
+ $("#health").innerHTML=(d.results||[]).map(r=>{const up=r.status>0&&r.status<500;return `<tr><td><b>${esc(r.name)}</b></td><td class="${up?"ok":"bad"}">${up?"Up":"Down"} (${r.status||"no answer"})</td><td>${r.ms} ms</td><td><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.url.replace("https://",""))}</a></td></tr>`}).join("");
+}
+$("#recheck").onclick=health;
+async function log(){
+ const {d}=await api("/api/log");
+ $("#log").innerHTML=(d.log||[]).map(e=>`<tr><td>${when(e.at)}</td><td>${esc(e.action.replace(/_/g," "))}</td><td>${esc(e.site||"")}</td><td class="muted">${esc(e.by)}</td></tr>`).join("")||'<tr><td colspan="4" class="muted">No changes yet.</td></tr>';
+}
+document.querySelectorAll("#ikSub button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#ikSub button").forEach(x=>x.classList.toggle("on",x===b));ik(b.dataset.k)});
+function table(rows,cols){ if(!rows||!rows.length)return '<p class="muted">Nothing to show.</p>';
+ return '<div style="overflow-x:auto"><table><thead><tr>'+cols.map(c=>`<th>${esc(c[1])}</th>`).join("")+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+cols.map(c=>`<td>${c[2]?c[2](r):esc(r[c[0]])}</td>`).join("")+'</tr>').join("")+'</tbody></table></div>'}
+async function ik(k){
+ const box=$("#ikBody"); box.innerHTML='<p class="muted">Loading…</p>';
+ if(k==="retention"){box.innerHTML='<p>Runs the retention job now: removes expired sessions, sign-in logs over a year old, closed requests over three years old, and accounts inactive for 24 months.</p><button class="b y" id="ret">Run retention now</button><div class="msg" id="retMsg"></div>';
+  $("#ret").onclick=async()=>{if(!confirm("Run the Ikigai retention job now?"))return;const r=await api("/api/ikigai/retention/run",{method:"POST",headers:{"content-type":"application/json"},body:"{}"});$("#retMsg").innerHTML=r.ok?'<span class="ok">Done: '+esc(JSON.stringify(r.d.result))+'</span>':'<span class="bad">'+esc(r.d.error)+'</span>'};return}
+ const r=await api("/api/ikigai/"+k);
+ if(!r.ok){box.innerHTML=`<p class="bad">${esc(r.d.error||"Ikigai did not answer.")}</p>`;return}
+ if(k==="institutions")box.innerHTML=table(r.d.institutions,[["co","Institution"],["type","Type"],["sub","Category"],["members","Members"],["filings","Filings"],["contracted","Agreement",x=>x.contracted?"Signed":"Trial"],["created_at","Since",x=>when(x.created_at)]]);
+ if(k==="requests")box.innerHTML=table(r.d.requests,[["ref","Ref"],["kind","Kind"],["status","Status"],["contact","Contact"],["detail","Detail"],["days_left","Days left"],["created_at","Raised",x=>when(x.created_at)]]);
+ if(k==="incidents")box.innerHTML=table(r.d.incidents,[["ref","Ref"],["summary","Summary"],["status","Status"],["detected_at","Detected",x=>when(x.detected_at)],["cert_in_due","CERT-In due",x=>when(x.cert_in_due)]]);
+}
+(async()=>{const {d}=await api("/api/me");$("#who").textContent=d.email||"";codes()})();
+</script></body></html>
