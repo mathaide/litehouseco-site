@@ -1,0 +1,22 @@
+# litehouse-gate: access-code gate in front of Origin8, MyVault, Jugaad and Income360.
+# Deployed by Cloudflare Workers Builds from this folder (root directory: gateway/gate).
+name = "litehouse-gate"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+routes = [
+  { pattern = "origin8.litehouseiq.com", custom_domain = true },
+  { pattern = "myvault.litehouseiq.com", custom_domain = true },
+  { pattern = "jugaad.litehouseiq.com", custom_domain = true },
+  { pattern = "psl.litehouseco.com", custom_domain = true },
+]
+
+[[kv_namespaces]]
+binding = "CODES"
+id = "529b1ef342424360815f5ac2ce8d8998"
+
+[vars]
+# Python services on Railway. None of these values are secret.
+ORIGIN8_ORIGIN = "REPLACE_WITH_RAILWAY_URL"
+MYVAULT_ORIGIN = "REPLACE_WITH_RAILWAY_URL"
+INCOME360_ORIGIN = "https://psl-ai-os-live-production.up.railway.app"
