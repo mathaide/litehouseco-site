@@ -1,0 +1,27 @@
+# litehouse-admin: private admin panel. Cloudflare Access (one-time code emailed to
+# ADMIN_EMAIL) stands in front; the Worker re-checks the Access token itself.
+# Deployed by Cloudflare Workers Builds from this folder (root directory: gateway/admin).
+name = "litehouse-admin"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+routes = [
+  { pattern = "admin.litehouseiq.com", custom_domain = true },
+]
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
+
+[[kv_namespaces]]
+binding = "CODES"
+id = "529b1ef342424360815f5ac2ce8d8998"
+
+[triggers]
+crons = ["*/10 * * * *"]
+
+[vars]
+ADMIN_EMAIL = "malcolm@litehouseco.com"
+ACCESS_TEAM = "plain-mountain-6985.cloudflareaccess.com"
+ACCESS_AUD = "REPLACE_WITH_ACCESS_AUD"
