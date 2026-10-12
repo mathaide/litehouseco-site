@@ -17,6 +17,6 @@ id = "529b1ef342424360815f5ac2ce8d8998"
 
 [vars]
 # Python services on Railway. None of these values are secret.
-ORIGIN8_ORIGIN = "REPLACE_WITH_RAILWAY_URL"
-MYVAULT_ORIGIN = "REPLACE_WITH_RAILWAY_URL"
+ORIGIN8_ORIGIN = "https://litehouseco-site-production.up.railway.app"
+MYVAULT_ORIGIN = "https://kind-perfection-production-be45.up.railway.app"
 INCOME360_ORIGIN = "https://psl-ai-os-live-production.up.railway.app"
