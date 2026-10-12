@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://litehouseco.com/sitemap.xml
