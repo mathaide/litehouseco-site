@@ -20,7 +20,7 @@ async function accessEmail(request, env) {
 async function accessEmailInner(request, env) {
   if (env.DEV_BYPASS_EMAIL) return env.DEV_BYPASS_EMAIL; // local testing only, never set in production
   const jwt = request.headers.get("cf-access-jwt-assertion");
-  if (!jwt || !env.ACCESS_TEAM || !env.ACCESS_AUD) return null;
+  if (!jwt || !env.ACCESS_TEAM) return null;
   const [h, p, s] = jwt.split(".");
   if (!h || !p || !s) return null;
   const header = JSON.parse(new TextDecoder().decode(b64u(h)));
@@ -35,7 +35,9 @@ async function accessEmailInner(request, env) {
   const ok = await crypto.subtle.verify("RSASSA-PKCS1-v1_5", key, b64u(s), new TextEncoder().encode(h + "." + p));
   if (!ok) return null;
   const aud = Array.isArray(payload.aud) ? payload.aud : [payload.aud];
-  if (!aud.includes(env.ACCESS_AUD)) return null;
+  // ACCESS_AUD pins the token to this one Access application when it is set. Without it,
+  // the token must still be signed by our own Access team, be unexpired, and name ADMIN_EMAIL.
+  if (env.ACCESS_AUD && /^[0-9a-f]{64}$/.test(env.ACCESS_AUD) && !aud.includes(env.ACCESS_AUD)) return null;
   if (payload.iss !== `https://${env.ACCESS_TEAM}`) return null;
   if (!payload.exp || payload.exp * 1000 < Date.now()) return null;
   return String(payload.email || "").toLowerCase();
