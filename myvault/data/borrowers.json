@@ -1,0 +1,58 @@
+[
+  {
+    "id": "B001",
+    "name": "Ravi Kumar",
+    "loan_product": "Home Loan",
+    "requested_amount": 4500000,
+    "tenure_months": 240,
+    "declared_monthly_income": 120000,
+    "bank_statement": {
+      "months": [
+        {"month": "2026-01", "salary_credit": 120000, "emi_debits": 12000, "avg_balance": 140000, "bounces": 0},
+        {"month": "2026-02", "salary_credit": 119000, "emi_debits": 12000, "avg_balance": 151000, "bounces": 0},
+        {"month": "2026-03", "salary_credit": 121000, "emi_debits": 12000, "avg_balance": 138000, "bounces": 0},
+        {"month": "2026-04", "salary_credit": 120000, "emi_debits": 12000, "avg_balance": 162000, "bounces": 0}
+      ]
+    },
+    "bureau": {"score": 768, "active_loans": 1, "overdue_accounts": 0, "enquiries_last_6m": 2, "writeoffs": 0},
+    "kyc": {"pan": true, "aadhaar": true, "address_proof": true},
+    "collateral": {"property_value": 6500000}
+  },
+  {
+    "id": "B002",
+    "name": "Anita Desai",
+    "loan_product": "Loan Against Property",
+    "requested_amount": 2500000,
+    "tenure_months": 180,
+    "declared_monthly_income": 95000,
+    "bank_statement": {
+      "months": [
+        {"month": "2026-01", "salary_credit": 82000, "emi_debits": 9000, "avg_balance": 41000, "bounces": 1},
+        {"month": "2026-02", "salary_credit": 85000, "emi_debits": 9000, "avg_balance": 22000, "bounces": 2},
+        {"month": "2026-03", "salary_credit": 80000, "emi_debits": 9000, "avg_balance": 18000, "bounces": 1},
+        {"month": "2026-04", "salary_credit": 84000, "emi_debits": 9000, "avg_balance": 25000, "bounces": 0}
+      ]
+    },
+    "bureau": {"score": 712, "active_loans": 3, "overdue_accounts": 0, "enquiries_last_6m": 6, "writeoffs": 0},
+    "kyc": {"pan": true, "aadhaar": true, "address_proof": false},
+    "collateral": {"property_value": 5400000}
+  },
+  {
+    "id": "B003",
+    "name": "Mohammed Iqbal",
+    "loan_product": "Personal Loan",
+    "requested_amount": 900000,
+    "tenure_months": 48,
+    "declared_monthly_income": 70000,
+    "bank_statement": {
+      "months": [
+        {"month": "2026-01", "salary_credit": 52000, "emi_debits": 19000, "avg_balance": 9000, "bounces": 2},
+        {"month": "2026-02", "salary_credit": 50000, "emi_debits": 19000, "avg_balance": 4000, "bounces": 3},
+        {"month": "2026-03", "salary_credit": 51000, "emi_debits": 19000, "avg_balance": 3000, "bounces": 2}
+      ]
+    },
+    "bureau": {"score": 624, "active_loans": 4, "overdue_accounts": 1, "enquiries_last_6m": 8, "writeoffs": 0},
+    "kyc": {"pan": true, "aadhaar": false, "address_proof": true},
+    "collateral": {}
+  }
+]
