@@ -8,3 +8,9 @@
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/mitra/*
+  ! Permissions-Policy
+  ! Content-Security-Policy
+  Permissions-Policy: geolocation=(self), microphone=(self), camera=(self), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
